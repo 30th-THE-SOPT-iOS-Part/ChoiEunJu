@@ -71,15 +71,63 @@
 		7756F9E027FEDCFB006F6EF3 /* Instagram-CloneCoding */ = {
 			isa = PBXGroup;
 			children = (
-				7756F9E127FEDCFB006F6EF3 /* AppDelegate.swift */,
-				7756F9E327FEDCFB006F6EF3 /* SceneDelegate.swift */,
-				7756F9E527FEDCFB006F6EF3 /* ViewController.swift */,
-				7756F9E727FEDCFB006F6EF3 /* Main.storyboard */,
-				7756F9EA27FEDCFD006F6EF3 /* Assets.xcassets */,
-				7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */,
-				7756F9EF27FEDCFD006F6EF3 /* Info.plist */,
+				7756F9F727FEE690006F6EF3 /* Global */,
+				7756F9F627FEE633006F6EF3 /* Screen */,
+				7756F9F527FEE614006F6EF3 /* Support */,
 			);
 			path = "Instagram-CloneCoding";
+			sourceTree = "<group>";
+		};
+		7756F9F527FEE614006F6EF3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				7756F9E127FEDCFB006F6EF3 /* AppDelegate.swift */,
+				7756F9E327FEDCFB006F6EF3 /* SceneDelegate.swift */,
+				7756F9EF27FEDCFD006F6EF3 /* Info.plist */,
+				7756F9EA27FEDCFD006F6EF3 /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		7756F9F627FEE633006F6EF3 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				7756F9F827FEE6BD006F6EF3 /* Main */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		7756F9F727FEE690006F6EF3 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		7756F9F827FEE6BD006F6EF3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7756F9F927FEE6C8006F6EF3 /* Storyboard */,
+				7756F9FA27FEE6D2006F6EF3 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7756F9F927FEE6C8006F6EF3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7756F9E727FEDCFB006F6EF3 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7756F9FA27FEE6D2006F6EF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7756F9E527FEDCFB006F6EF3 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		7BF9841F0FB66A4699D9F848 /* Pods */ = {
@@ -88,7 +136,6 @@
 				6F8A8BD4AD8989C437075C34 /* Pods-Instagram-CloneCoding.debug.xcconfig */,
 				205945C4F3A74670664D4C89 /* Pods-Instagram-CloneCoding.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
