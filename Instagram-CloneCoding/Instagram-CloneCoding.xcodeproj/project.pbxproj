@@ -13,6 +13,10 @@
 		7756F9E927FEDCFB006F6EF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756F9E727FEDCFB006F6EF3 /* Main.storyboard */; };
 		7756F9EB27FEDCFD006F6EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7756F9EA27FEDCFD006F6EF3 /* Assets.xcassets */; };
 		7756F9EE27FEDCFD006F6EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */; };
+		7756F9FD27FF1F0B006F6EF3 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9FC27FF1F0B006F6EF3 /* UIViewController+.swift */; };
+		7756F9FF27FF1F70006F6EF3 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9FE27FF1F70006F6EF3 /* UIView+.swift */; };
+		7756FA0127FF2294006F6EF3 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA0027FF2294006F6EF3 /* UIButton+.swift */; };
+		7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA0227FF2309006F6EF3 /* Adjusted+.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +32,10 @@
 		7756F9EA27FEDCFD006F6EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7756F9ED27FEDCFD006F6EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7756F9EF27FEDCFD006F6EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7756F9FC27FF1F0B006F6EF3 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		7756F9FE27FF1F70006F6EF3 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		7756FA0027FF2294006F6EF3 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		7756FA0227FF2309006F6EF3 /* Adjusted+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adjusted+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 		7756F9F727FEE690006F6EF3 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				7756F9FB27FF1EE1006F6EF3 /* Extension */,
 				7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */,
 			);
 			path = Global;
@@ -128,6 +137,17 @@
 				7756F9E527FEDCFB006F6EF3 /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		7756F9FB27FF1EE1006F6EF3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7756F9FC27FF1F0B006F6EF3 /* UIViewController+.swift */,
+				7756F9FE27FF1F70006F6EF3 /* UIView+.swift */,
+				7756FA0027FF2294006F6EF3 /* UIButton+.swift */,
+				7756FA0227FF2309006F6EF3 /* Adjusted+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		7BF9841F0FB66A4699D9F848 /* Pods */ = {
@@ -254,9 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */,
 				7756F9E627FEDCFB006F6EF3 /* ViewController.swift in Sources */,
+				7756FA0127FF2294006F6EF3 /* UIButton+.swift in Sources */,
 				7756F9E227FEDCFB006F6EF3 /* AppDelegate.swift in Sources */,
+				7756F9FD27FF1F0B006F6EF3 /* UIViewController+.swift in Sources */,
 				7756F9E427FEDCFB006F6EF3 /* SceneDelegate.swift in Sources */,
+				7756F9FF27FF1F70006F6EF3 /* UIView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
