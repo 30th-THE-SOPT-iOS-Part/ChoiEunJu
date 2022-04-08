@@ -40,6 +40,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        setUptapCompleteBtn()
     }
 }
 
@@ -63,6 +64,17 @@ extension ResultViewController {
             $0.leading.equalToSuperview().offset(20)
             $0.trailing.equalToSuperview().offset(-20)
             $0.height.equalTo(50)
+        }
+    }
+}
+
+// MARK: - Custom Methods
+extension ResultViewController {
+    
+    /// 완료 버튼 tap Action 설정 메서드
+    private func setUptapCompleteBtn() {
+        completeBtn.press {
+            self.dismiss(animated: true, completion: nil)
         }
     }
 }
