@@ -35,7 +35,7 @@ class MakeUserNameViewController: UIViewController {
     
     private let userNameTextField = UITextField().then {
         $0.placeholder = "사용자 이름"
-        $0.font = .systemFont(ofSize: 14, weight: .semibold)
+        $0.font = .systemFont(ofSize: 14, weight: .regular)
         $0.borderStyle = .roundedRect
     }
     
