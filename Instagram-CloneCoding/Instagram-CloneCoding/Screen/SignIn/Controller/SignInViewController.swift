@@ -79,6 +79,9 @@ class SignInViewController: UIViewController {
         configureUI()
         setUpTapSignInBtn()
         setUpTapSignUpBtn()
+        setUpTapClearBtn()
+        setUpTapEyeBtn()
+        setUpTextField()
     }
 }
 
@@ -174,6 +177,31 @@ extension SignInViewController {
         }
     }
     
+    /// x버튼 tap Action 설정 메서드
+    private func setUpTapClearBtn() {
+        clearBtn.press {
+            self.idTextField.text?.removeAll()
+        }
+    }
+    
+    /// eye버튼 tap Action 설정 메서드
+    private func setUpTapEyeBtn() {
+        eyeBtn.press {
+            self.eyeBtn.isSelected.toggle()
+            self.pwTextField.isSecureTextEntry.toggle()
+            self.eyeBtn.isSelected ? self.eyeBtn.setImage(UIImage(named: "password shown eye icon"), for: .normal) : self.eyeBtn.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
+        }
+    }
+    
+    /// textField 설정 메서드
+    private func setUpTextField() {
+        idTextField.delegate = self
+        pwTextField.delegate = self
+        
+        idTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+        pwTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+    }
+    
     /// textField 초기화하는 메서드
     private func resetTextField() {
         idTextField.text?.removeAll()
@@ -181,3 +209,19 @@ extension SignInViewController {
     }
 }
 
+// MARK: - UITextFieldDelegate
+extension SignInViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == self.idTextField {
+            textField.resignFirstResponder()
+            self.pwTextField.becomeFirstResponder()
+        }
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    @objc
+    func textFieldDidChange(_ sender: Any?) {
+        clearBtn.isHidden = idTextField.isEmpty ? true : false
+    }
+}
