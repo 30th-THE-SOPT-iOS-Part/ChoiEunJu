@@ -119,3 +119,17 @@ extension SignInViewController {
     }
 }
 
+// MARK: - Custom Methods
+extension SignInViewController {
+    
+    /// 로그인 버튼 tap Action 설정 메서드
+    private func setUpTapSignInBtn() {
+        signInBtn.press {
+            guard let resultViewController = self.storyboard?.instantiateViewController(withIdentifier: ResultViewController.className) as? ResultViewController else { return }
+            
+            resultViewController.modalPresentationStyle = .fullScreen
+            self.present(resultViewController, animated: true, completion: nil)
+        }
+    }
+}
+
