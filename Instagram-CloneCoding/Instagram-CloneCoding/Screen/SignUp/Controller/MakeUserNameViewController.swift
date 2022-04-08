@@ -18,6 +18,7 @@ class MakeUserNameViewController: UIViewController {
     
     private let titleLabel = UILabel().then {
         $0.text = "사용자 이름 만들기"
+        $0.setCharacterSpacing(1.2)
         $0.font = .systemFont(ofSize: 24, weight: .semibold)
         $0.textAlignment = .center
         $0.sizeToFit()
