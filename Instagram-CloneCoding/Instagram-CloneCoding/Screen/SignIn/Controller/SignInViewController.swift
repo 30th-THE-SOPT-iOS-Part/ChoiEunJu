@@ -59,6 +59,11 @@ class SignInViewController: UIViewController {
     }
     
     // MARK: - Life Cycle
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        resetTextField()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -142,6 +147,12 @@ extension SignInViewController {
             
             self.navigationController?.pushViewController(signUpViewController, animated: true)
         }
+    }
+    
+    /// textField 초기화하는 메서드
+    private func resetTextField() {
+        idTextField.text?.removeAll()
+        pwTextField.text?.removeAll()
     }
 }
 
