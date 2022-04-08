@@ -58,6 +58,16 @@ class SignInViewController: UIViewController {
         $0.sizeToFit()
     }
     
+    private let clearBtn = UIButton().then {
+        $0.setImage(UIImage(systemName: "xmark.circle.fill"), for: .normal)
+        $0.tintColor = .lightGray
+        $0.isHidden = true
+    }
+    
+    private let eyeBtn = UIButton().then {
+        $0.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
+    }
+    
     // MARK: - Life Cycle
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -75,7 +85,7 @@ class SignInViewController: UIViewController {
 // MARK: - UI
 extension SignInViewController {
     private func configureUI() {
-        view.addSubviews([logoImgView, idTextField, pwTextField, findPwBtn, signInBtn, signUpContentView])
+        view.addSubviews([logoImgView, idTextField, pwTextField, findPwBtn, signInBtn, signUpContentView, clearBtn, eyeBtn])
         signUpContentView.addSubviews([signUpBtn, signUpGuideLabel])
         
         logoImgView.snp.makeConstraints {
@@ -123,6 +133,20 @@ extension SignInViewController {
         signUpBtn.snp.makeConstraints {
             $0.top.bottom.trailing.equalTo(signUpContentView)
             $0.leading.equalTo(signUpGuideLabel.snp.trailing).offset(3)
+        }
+        
+        clearBtn.snp.makeConstraints {
+            $0.trailing.equalTo(idTextField.snp.trailing).offset(-14)
+            $0.centerY.equalTo(idTextField.snp.centerY)
+            $0.width.equalTo(20)
+            $0.height.equalTo(20)
+        }
+        
+        eyeBtn.snp.makeConstraints {
+            $0.trailing.equalTo(pwTextField.snp.trailing).offset(-14)
+            $0.centerY.equalTo(pwTextField.snp.centerY)
+            $0.width.equalTo(20)
+            $0.height.equalTo(20)
         }
     }
 }
