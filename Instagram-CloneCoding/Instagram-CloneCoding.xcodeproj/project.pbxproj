@@ -19,6 +19,8 @@
 		7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA0227FF2309006F6EF3 /* Adjusted+.swift */; };
 		7756FA0F27FFD5E9006F6EF3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA0E27FFD5E9006F6EF3 /* ResultViewController.swift */; };
 		7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */; };
+		7756FA1528001D07006F6EF3 /* SignUpStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */; };
+		7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +42,8 @@
 		7756FA0227FF2309006F6EF3 /* Adjusted+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adjusted+.swift"; sourceTree = "<group>"; };
 		7756FA0E27FFD5E9006F6EF3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryBoard.storyboard; sourceTree = "<group>"; };
+		7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeUserNameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				7756F9F827FEE6BD006F6EF3 /* SignIn */,
+				7756FA1228001CD9006F6EF3 /* SignUp */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -154,6 +159,31 @@
 				7756FA0227FF2309006F6EF3 /* Adjusted+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		7756FA1228001CD9006F6EF3 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7756FA1328001CE5006F6EF3 /* Storyboard */,
+				7756FA1A28001D6C006F6EF3 /* Controller */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		7756FA1328001CE5006F6EF3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7756FA1A28001D6C006F6EF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		7BF9841F0FB66A4699D9F848 /* Pods */ = {
@@ -226,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7756F9EE27FEDCFD006F6EF3 /* LaunchScreen.storyboard in Resources */,
+				7756FA1528001D07006F6EF3 /* SignUpStoryBoard.storyboard in Resources */,
 				7756F9EB27FEDCFD006F6EF3 /* Assets.xcassets in Resources */,
 				7756F9E927FEDCFB006F6EF3 /* SignInStoryBoard.storyboard in Resources */,
 			);
@@ -280,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */,
 				7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */,
 				7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */,
 				7756F9E627FEDCFB006F6EF3 /* SignInViewController.swift in Sources */,
