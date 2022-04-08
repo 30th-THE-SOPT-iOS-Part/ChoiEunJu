@@ -40,7 +40,9 @@ class SignInViewController: UIViewController {
         $0.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
         $0.setTitleColor(.white, for: .normal)
         $0.backgroundColor = .systemBlue
+        $0.alpha = 0.5
         $0.makeRounded(cornerRadius: 5.adjusted)
+        $0.isEnabled = false
     }
     
     private let signUpContentView = UIView()
@@ -157,6 +159,17 @@ extension SignInViewController {
 // MARK: - Custom Methods
 extension SignInViewController {
     
+    /// 로그인 버튼 활성화 조건 검사하는 메서드
+    private func setUpSignInBtnStatus() {
+        if !idTextField.isEmpty && !pwTextField.isEmpty {
+            signInBtn.isEnabled = true
+            signInBtn.alpha = 1
+        } else {
+            signInBtn.isEnabled = false
+            signInBtn.alpha = 0.5
+        }
+    }
+    
     /// 로그인 버튼 tap Action 설정 메서드
     private func setUpTapSignInBtn() {
         signInBtn.press {
@@ -181,6 +194,7 @@ extension SignInViewController {
     private func setUpTapClearBtn() {
         clearBtn.press {
             self.idTextField.text?.removeAll()
+            self.setUpSignInBtnStatus()
         }
     }
     
@@ -206,6 +220,7 @@ extension SignInViewController {
     private func resetTextField() {
         idTextField.text?.removeAll()
         pwTextField.text?.removeAll()
+        setUpSignInBtnStatus()
     }
 }
 
@@ -222,6 +237,7 @@ extension SignInViewController: UITextFieldDelegate {
     
     @objc
     func textFieldDidChange(_ sender: Any?) {
+        setUpSignInBtnStatus()
         clearBtn.isHidden = idTextField.isEmpty ? true : false
     }
 }
