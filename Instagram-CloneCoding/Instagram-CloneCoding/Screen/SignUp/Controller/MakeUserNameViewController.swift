@@ -44,7 +44,9 @@ class MakeUserNameViewController: UIViewController {
         $0.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
         $0.setTitleColor(.white, for: .normal)
         $0.backgroundColor = .systemBlue
+        $0.alpha = 0.5
         $0.makeRounded(cornerRadius: 5.adjusted)
+        $0.isEnabled = false
     }
     
     // MARK: - Life Cycle
@@ -53,6 +55,7 @@ class MakeUserNameViewController: UIViewController {
         configureUI()
         setUpTapBackBtn()
         setUpTapNextBtn()
+        setUpTextField()
     }
 }
 
@@ -96,6 +99,17 @@ extension MakeUserNameViewController {
 // MARK: - Custom Methods
 extension MakeUserNameViewController {
     
+    /// 다음 버튼 활성화 조건 검사하는 메서드
+    private func setUpNextBtnStatus() {
+        if !userNameTextField.isEmpty {
+            nextBtn.isEnabled = true
+            nextBtn.alpha = 1
+        } else {
+            nextBtn.isEnabled = false
+            nextBtn.alpha = 0.5
+        }
+    }
+    
     /// 뒤로가기 버튼 tap Action 설정 메서드
     private func setUpTapBackBtn() {
         backBtn.press {
@@ -112,4 +126,20 @@ extension MakeUserNameViewController {
             self.navigationController?.pushViewController(nextViewController, animated: true)
         }
     }
+    
+    /// textField 설정 메서드
+    private func setUpTextField() {
+        userNameTextField.delegate = self
+        userNameTextField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: .editingChanged)
+    }
 }
+
+// MARK: - UITextFieldDelegate
+extension MakeUserNameViewController: UITextFieldDelegate {
+    
+    @objc
+    func textFieldDidChange(_ sender: Any?) {
+        setUpNextBtnStatus()
+    }
+}
+
