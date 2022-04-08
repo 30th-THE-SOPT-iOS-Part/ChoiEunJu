@@ -18,14 +18,14 @@ class SignInViewController: UIViewController {
     
     private let idTextField = UITextField().then {
         $0.placeholder = "전화번호, 사용자 이름 또는 이메일"
-        $0.font = .systemFont(ofSize: 14, weight: .semibold)
+        $0.font = .systemFont(ofSize: 14, weight: .regular)
         $0.borderStyle = .roundedRect
     }
     
     private let pwTextField = UITextField().then {
         $0.placeholder = "비밀번호"
         $0.isSecureTextEntry = true
-        $0.font = .systemFont(ofSize: 14, weight: .semibold)
+        $0.font = .systemFont(ofSize: 14, weight: .regular)
         $0.borderStyle = .roundedRect
     }
     
