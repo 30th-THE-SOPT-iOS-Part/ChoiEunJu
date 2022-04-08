@@ -37,6 +37,7 @@ class ResultViewController: UIViewController {
         $0.makeRounded(cornerRadius: 5.adjusted)
     }
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
