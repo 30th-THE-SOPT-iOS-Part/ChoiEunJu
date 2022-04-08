@@ -53,7 +53,7 @@ class SignInViewController: UIViewController {
     private let signUpGuideLabel = UILabel().then {
         $0.text = "계정이 없으신가요?"
         $0.textColor = .gray
-        $0.font = .systemFont(ofSize: 14)
+        $0.font = .systemFont(ofSize: 14, weight: .regular)
         $0.sizeToFit()
     }
     
@@ -61,6 +61,7 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        setUpTapSignInBtn()
     }
 }
 
