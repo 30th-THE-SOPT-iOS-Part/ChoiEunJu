@@ -22,6 +22,7 @@
 		7756FA1528001D07006F6EF3 /* SignUpStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */; };
 		7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */; };
 		7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */; };
+		7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA2328009F40006F6EF3 /* UITextField+.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryBoard.storyboard; sourceTree = "<group>"; };
 		7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeUserNameViewController.swift; sourceTree = "<group>"; };
 		7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePasswordViewController.swift; sourceTree = "<group>"; };
+		7756FA2328009F40006F6EF3 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				7756F9FE27FF1F70006F6EF3 /* UIView+.swift */,
 				7756FA0027FF2294006F6EF3 /* UIButton+.swift */,
 				7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */,
+				7756FA2328009F40006F6EF3 /* UITextField+.swift */,
 				7756FA0227FF2309006F6EF3 /* Adjusted+.swift */,
 			);
 			path = Extension;
@@ -317,6 +320,7 @@
 				7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */,
 				7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */,
 				7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */,
+				7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */,
 				7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */,
 				7756F9E627FEDCFB006F6EF3 /* SignInViewController.swift in Sources */,
 				7756FA0127FF2294006F6EF3 /* UIButton+.swift in Sources */,
