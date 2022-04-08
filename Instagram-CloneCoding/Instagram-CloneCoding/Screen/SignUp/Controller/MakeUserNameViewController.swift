@@ -51,6 +51,7 @@ class MakeUserNameViewController: UIViewController {
         super.viewDidLoad()
         configureUI()
         setUpTapBackBtn()
+        setUpTapNextBtn()
     }
 }
 
@@ -98,6 +99,15 @@ extension MakeUserNameViewController {
     private func setUpTapBackBtn() {
         backBtn.press {
             self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    /// 다음 버튼 tap Action 설정 메서드
+    private func setUpTapNextBtn() {
+        nextBtn.press {
+            guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: MakePasswordViewController.className) as? MakePasswordViewController else { return }
+            
+            self.navigationController?.pushViewController(nextViewController, animated: true)
         }
     }
 }
