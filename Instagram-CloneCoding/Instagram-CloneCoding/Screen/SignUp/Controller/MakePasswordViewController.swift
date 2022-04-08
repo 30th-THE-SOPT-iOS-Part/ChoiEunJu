@@ -35,7 +35,7 @@ class MakePasswordViewController: UIViewController {
         $0.sizeToFit()
     }
     
-    private let userNameTextField = UITextField().then {
+    private let pwTextField = UITextField().then {
         $0.placeholder = "비밀번호"
         $0.font = .systemFont(ofSize: 14, weight: .semibold)
         $0.borderStyle = .roundedRect
@@ -61,7 +61,7 @@ class MakePasswordViewController: UIViewController {
 // MARK: - UI
 extension MakePasswordViewController {
     private func configureUI() {
-        view.addSubviews([backBtn, titleLabel, subTitleLabel, userNameTextField, nextBtn])
+        view.addSubviews([backBtn, titleLabel, subTitleLabel, pwTextField, nextBtn])
         
         backBtn.snp.makeConstraints {
             $0.top.equalToSuperview().offset(60)
@@ -79,7 +79,7 @@ extension MakePasswordViewController {
             $0.centerX.equalTo(titleLabel.snp.centerX)
         }
         
-        userNameTextField.snp.makeConstraints {
+        pwTextField.snp.makeConstraints {
             $0.top.equalTo(subTitleLabel.snp.bottom).offset(20)
             $0.leading.equalToSuperview().offset(20)
             $0.trailing.equalToSuperview().offset(-20)
@@ -87,7 +87,7 @@ extension MakePasswordViewController {
         }
         
         nextBtn.snp.makeConstraints {
-            $0.top.equalTo(userNameTextField.snp.bottom).offset(15)
+            $0.top.equalTo(pwTextField.snp.bottom).offset(15)
             $0.leading.equalToSuperview().offset(20)
             $0.trailing.equalToSuperview().offset(-20)
             $0.height.equalTo(50)
