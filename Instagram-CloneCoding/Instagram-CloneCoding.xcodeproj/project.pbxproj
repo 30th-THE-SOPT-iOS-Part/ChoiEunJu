@@ -21,6 +21,7 @@
 		7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */; };
 		7756FA1528001D07006F6EF3 /* SignUpStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */; };
 		7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */; };
+		7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryBoard.storyboard; sourceTree = "<group>"; };
 		7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeUserNameViewController.swift; sourceTree = "<group>"; };
+		7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */,
+				7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			files = (
 				7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */,
 				7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */,
+				7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */,
 				7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */,
 				7756F9E627FEDCFB006F6EF3 /* SignInViewController.swift in Sources */,
 				7756FA0127FF2294006F6EF3 /* UIButton+.swift in Sources */,
