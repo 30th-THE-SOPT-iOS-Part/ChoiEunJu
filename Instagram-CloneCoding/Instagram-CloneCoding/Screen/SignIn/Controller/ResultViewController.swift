@@ -12,13 +12,15 @@ import Then
 class ResultViewController: UIViewController {
 
     // MARK: - Properties
+    var userName: String = ""
+    
     private let messageLabel = UILabel().then {
-        $0.text = "000님 Instagram에\n오신 것을 환영합니다"
-        $0.font = .systemFont(ofSize: 24, weight: .regular)
-        $0.numberOfLines = 0
+        $0.text = "000님, Instagram에\n오신 것을 환영합니다"
+        $0.font = .systemFont(ofSize: 22, weight: .regular)
+        $0.numberOfLines = 2
         $0.textAlignment = .center
         $0.sizeToFit()
-        $0.setLineAndCharacterSpacing(lineSpacing: 4, characterSpacing: 1.2)
+        $0.setLineAndCharacterSpacing(lineSpacing: 4, characterSpacing: 1)
     }
     
     private let descriptionLabel = UILabel().then {

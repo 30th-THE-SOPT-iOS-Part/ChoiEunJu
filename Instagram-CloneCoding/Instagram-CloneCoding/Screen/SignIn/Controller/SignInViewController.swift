@@ -24,6 +24,7 @@ class SignInViewController: UIViewController {
     
     private let pwTextField = UITextField().then {
         $0.placeholder = "비밀번호"
+        $0.isSecureTextEntry = true
         $0.font = .systemFont(ofSize: 14, weight: .semibold)
         $0.borderStyle = .roundedRect
     }
