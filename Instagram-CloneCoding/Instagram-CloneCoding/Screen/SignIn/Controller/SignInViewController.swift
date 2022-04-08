@@ -135,6 +135,7 @@ extension SignInViewController {
         signInBtn.press {
             guard let resultViewController = self.storyboard?.instantiateViewController(withIdentifier: ResultViewController.className) as? ResultViewController else { return }
             
+            resultViewController.userName = self.idTextField.text ?? ""
             resultViewController.modalPresentationStyle = .fullScreen
             self.present(resultViewController, animated: true, completion: nil)
         }

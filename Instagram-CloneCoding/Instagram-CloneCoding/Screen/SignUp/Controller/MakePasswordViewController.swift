@@ -12,6 +12,8 @@ import Then
 class MakePasswordViewController: UIViewController {
     
     // MARK: - Properties
+    var userName: String = ""
+    
     private let backBtn = UIButton().then {
         $0.setImage(UIImage(named: "icn_back_24"), for: .normal)
     }
@@ -108,6 +110,7 @@ extension MakePasswordViewController {
         nextBtn.press {
             guard let nextViewController = UIStoryboard.init(name: "SignInStoryBoard", bundle: nil).instantiateViewController(withIdentifier: ResultViewController.className) as? ResultViewController else { return }
             
+            nextViewController.userName = self.userName
             nextViewController.modalPresentationStyle = .fullScreen
             self.present(nextViewController, animated: true, completion: nil)
             self.navigationController?.popToRootViewController(animated: true)

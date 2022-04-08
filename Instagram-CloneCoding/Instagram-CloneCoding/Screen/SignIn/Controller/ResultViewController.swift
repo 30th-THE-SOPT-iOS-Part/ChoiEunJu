@@ -44,6 +44,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         configureUI()
         setUptapCompleteBtn()
+        setUpMessageLabel()
     }
 }
 
@@ -79,5 +80,10 @@ extension ResultViewController {
         completeBtn.press {
             self.dismiss(animated: true, completion: nil)
         }
+    }
+    
+    private func setUpMessageLabel() {
+        messageLabel.text = "\(userName)님, Instagram에\n오신 것을 환영합니다"
+        messageLabel.textAlignment = .center
     }
 }

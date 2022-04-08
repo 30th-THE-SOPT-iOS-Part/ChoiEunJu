@@ -108,6 +108,7 @@ extension MakeUserNameViewController {
         nextBtn.press {
             guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: MakePasswordViewController.className) as? MakePasswordViewController else { return }
             
+            nextViewController.userName = self.userNameTextField.text ?? ""
             self.navigationController?.pushViewController(nextViewController, animated: true)
         }
     }
