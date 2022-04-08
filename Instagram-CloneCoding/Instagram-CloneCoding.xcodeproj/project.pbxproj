@@ -17,6 +17,7 @@
 		7756F9FF27FF1F70006F6EF3 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9FE27FF1F70006F6EF3 /* UIView+.swift */; };
 		7756FA0127FF2294006F6EF3 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA0027FF2294006F6EF3 /* UIButton+.swift */; };
 		7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA0227FF2309006F6EF3 /* Adjusted+.swift */; };
+		7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		7756F9FE27FF1F70006F6EF3 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		7756FA0027FF2294006F6EF3 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		7756FA0227FF2309006F6EF3 /* Adjusted+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adjusted+.swift"; sourceTree = "<group>"; };
+		7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				7756F9FC27FF1F0B006F6EF3 /* UIViewController+.swift */,
 				7756F9FE27FF1F70006F6EF3 /* UIView+.swift */,
 				7756FA0027FF2294006F6EF3 /* UIButton+.swift */,
+				7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */,
 				7756FA0227FF2309006F6EF3 /* Adjusted+.swift */,
 			);
 			path = Extension;
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */,
 				7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */,
 				7756F9E627FEDCFB006F6EF3 /* SignInViewController.swift in Sources */,
 				7756FA0127FF2294006F6EF3 /* UIButton+.swift in Sources */,
