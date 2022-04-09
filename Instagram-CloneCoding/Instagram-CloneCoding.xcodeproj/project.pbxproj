@@ -23,6 +23,7 @@
 		7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */; };
 		7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */; };
 		7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA2328009F40006F6EF3 /* UITextField+.swift */; };
+		77D9ECF428013ADC000EA76A /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D9ECF328013ADC000EA76A /* Identifiers.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeUserNameViewController.swift; sourceTree = "<group>"; };
 		7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePasswordViewController.swift; sourceTree = "<group>"; };
 		7756FA2328009F40006F6EF3 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		77D9ECF328013ADC000EA76A /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 		7756F9F727FEE690006F6EF3 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				77D9ECF228013AC4000EA76A /* Struct */,
 				7756F9FB27FF1EE1006F6EF3 /* Extension */,
 				7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */,
 			);
@@ -190,6 +193,14 @@
 				7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		77D9ECF228013AC4000EA76A /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				77D9ECF328013ADC000EA76A /* Identifiers.swift */,
+			);
+			path = Struct;
 			sourceTree = "<group>";
 		};
 		7BF9841F0FB66A4699D9F848 /* Pods */ = {
@@ -326,6 +337,7 @@
 				7756FA0127FF2294006F6EF3 /* UIButton+.swift in Sources */,
 				7756FA0F27FFD5E9006F6EF3 /* ResultViewController.swift in Sources */,
 				7756F9E227FEDCFB006F6EF3 /* AppDelegate.swift in Sources */,
+				77D9ECF428013ADC000EA76A /* Identifiers.swift in Sources */,
 				7756F9FD27FF1F0B006F6EF3 /* UIViewController+.swift in Sources */,
 				7756F9E427FEDCFB006F6EF3 /* SceneDelegate.swift in Sources */,
 				7756F9FF27FF1F70006F6EF3 /* UIView+.swift in Sources */,
