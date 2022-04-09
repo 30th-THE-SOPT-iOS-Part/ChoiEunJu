@@ -184,7 +184,7 @@ extension SignInViewController {
     /// 가입하기 버튼 tap Action 설정 메서드
     private func setUpTapSignUpBtn() {
         signUpBtn.press {
-            guard let signUpViewController = UIStoryboard.init(name: "SignUpStoryBoard", bundle: nil).instantiateViewController(withIdentifier: MakeUserNameViewController.className) as? MakeUserNameViewController else { return }
+            guard let signUpViewController = UIStoryboard.init(name: Identifiers.SignUpStoryBoard, bundle: nil).instantiateViewController(withIdentifier: MakeUserNameViewController.className) as? MakeUserNameViewController else { return }
             
             self.navigationController?.pushViewController(signUpViewController, animated: true)
         }
