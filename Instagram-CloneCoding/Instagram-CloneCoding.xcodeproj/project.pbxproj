@@ -9,14 +9,21 @@
 /* Begin PBXBuildFile section */
 		7756F9E227FEDCFB006F6EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E127FEDCFB006F6EF3 /* AppDelegate.swift */; };
 		7756F9E427FEDCFB006F6EF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E327FEDCFB006F6EF3 /* SceneDelegate.swift */; };
-		7756F9E627FEDCFB006F6EF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E527FEDCFB006F6EF3 /* ViewController.swift */; };
-		7756F9E927FEDCFB006F6EF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756F9E727FEDCFB006F6EF3 /* Main.storyboard */; };
+		7756F9E627FEDCFB006F6EF3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E527FEDCFB006F6EF3 /* SignInViewController.swift */; };
+		7756F9E927FEDCFB006F6EF3 /* SignInStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756F9E727FEDCFB006F6EF3 /* SignInStoryBoard.storyboard */; };
 		7756F9EB27FEDCFD006F6EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7756F9EA27FEDCFD006F6EF3 /* Assets.xcassets */; };
 		7756F9EE27FEDCFD006F6EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */; };
 		7756F9FD27FF1F0B006F6EF3 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9FC27FF1F0B006F6EF3 /* UIViewController+.swift */; };
 		7756F9FF27FF1F70006F6EF3 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9FE27FF1F70006F6EF3 /* UIView+.swift */; };
 		7756FA0127FF2294006F6EF3 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA0027FF2294006F6EF3 /* UIButton+.swift */; };
 		7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA0227FF2309006F6EF3 /* Adjusted+.swift */; };
+		7756FA0F27FFD5E9006F6EF3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA0E27FFD5E9006F6EF3 /* ResultViewController.swift */; };
+		7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */; };
+		7756FA1528001D07006F6EF3 /* SignUpStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */; };
+		7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */; };
+		7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */; };
+		7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA2328009F40006F6EF3 /* UITextField+.swift */; };
+		77D9ECF428013ADC000EA76A /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D9ECF328013ADC000EA76A /* Identifiers.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,8 +34,8 @@
 		7756F9DE27FEDCFB006F6EF3 /* Instagram-CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-CloneCoding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7756F9E127FEDCFB006F6EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7756F9E327FEDCFB006F6EF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7756F9E527FEDCFB006F6EF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7756F9E827FEDCFB006F6EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7756F9E527FEDCFB006F6EF3 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		7756F9E827FEDCFB006F6EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignInStoryBoard.storyboard; sourceTree = "<group>"; };
 		7756F9EA27FEDCFD006F6EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7756F9ED27FEDCFD006F6EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7756F9EF27FEDCFD006F6EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +43,13 @@
 		7756F9FE27FF1F70006F6EF3 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		7756FA0027FF2294006F6EF3 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		7756FA0227FF2309006F6EF3 /* Adjusted+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adjusted+.swift"; sourceTree = "<group>"; };
+		7756FA0E27FFD5E9006F6EF3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryBoard.storyboard; sourceTree = "<group>"; };
+		7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeUserNameViewController.swift; sourceTree = "<group>"; };
+		7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePasswordViewController.swift; sourceTree = "<group>"; };
+		7756FA2328009F40006F6EF3 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		77D9ECF328013ADC000EA76A /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +114,8 @@
 		7756F9F627FEE633006F6EF3 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				7756F9F827FEE6BD006F6EF3 /* Main */,
+				7756F9F827FEE6BD006F6EF3 /* SignIn */,
+				7756FA1228001CD9006F6EF3 /* SignUp */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -108,25 +123,26 @@
 		7756F9F727FEE690006F6EF3 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				77D9ECF228013AC4000EA76A /* Struct */,
 				7756F9FB27FF1EE1006F6EF3 /* Extension */,
 				7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */,
 			);
 			path = Global;
 			sourceTree = "<group>";
 		};
-		7756F9F827FEE6BD006F6EF3 /* Main */ = {
+		7756F9F827FEE6BD006F6EF3 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
 				7756F9F927FEE6C8006F6EF3 /* Storyboard */,
 				7756F9FA27FEE6D2006F6EF3 /* Controller */,
 			);
-			path = Main;
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 		7756F9F927FEE6C8006F6EF3 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				7756F9E727FEDCFB006F6EF3 /* Main.storyboard */,
+				7756F9E727FEDCFB006F6EF3 /* SignInStoryBoard.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -134,7 +150,8 @@
 		7756F9FA27FEE6D2006F6EF3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7756F9E527FEDCFB006F6EF3 /* ViewController.swift */,
+				7756F9E527FEDCFB006F6EF3 /* SignInViewController.swift */,
+				7756FA0E27FFD5E9006F6EF3 /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,9 +162,45 @@
 				7756F9FC27FF1F0B006F6EF3 /* UIViewController+.swift */,
 				7756F9FE27FF1F70006F6EF3 /* UIView+.swift */,
 				7756FA0027FF2294006F6EF3 /* UIButton+.swift */,
+				7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */,
+				7756FA2328009F40006F6EF3 /* UITextField+.swift */,
 				7756FA0227FF2309006F6EF3 /* Adjusted+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		7756FA1228001CD9006F6EF3 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7756FA1328001CE5006F6EF3 /* Storyboard */,
+				7756FA1A28001D6C006F6EF3 /* Controller */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		7756FA1328001CE5006F6EF3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7756FA1A28001D6C006F6EF3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */,
+				7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77D9ECF228013AC4000EA76A /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				77D9ECF328013ADC000EA76A /* Identifiers.swift */,
+			);
+			path = Struct;
 			sourceTree = "<group>";
 		};
 		7BF9841F0FB66A4699D9F848 /* Pods */ = {
@@ -220,8 +273,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7756F9EE27FEDCFD006F6EF3 /* LaunchScreen.storyboard in Resources */,
+				7756FA1528001D07006F6EF3 /* SignUpStoryBoard.storyboard in Resources */,
 				7756F9EB27FEDCFD006F6EF3 /* Assets.xcassets in Resources */,
-				7756F9E927FEDCFB006F6EF3 /* Main.storyboard in Resources */,
+				7756F9E927FEDCFB006F6EF3 /* SignInStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,10 +328,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */,
+				7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */,
+				7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */,
+				7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */,
 				7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */,
-				7756F9E627FEDCFB006F6EF3 /* ViewController.swift in Sources */,
+				7756F9E627FEDCFB006F6EF3 /* SignInViewController.swift in Sources */,
 				7756FA0127FF2294006F6EF3 /* UIButton+.swift in Sources */,
+				7756FA0F27FFD5E9006F6EF3 /* ResultViewController.swift in Sources */,
 				7756F9E227FEDCFB006F6EF3 /* AppDelegate.swift in Sources */,
+				77D9ECF428013ADC000EA76A /* Identifiers.swift in Sources */,
 				7756F9FD27FF1F0B006F6EF3 /* UIViewController+.swift in Sources */,
 				7756F9E427FEDCFB006F6EF3 /* SceneDelegate.swift in Sources */,
 				7756F9FF27FF1F70006F6EF3 /* UIView+.swift in Sources */,
@@ -287,12 +347,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7756F9E727FEDCFB006F6EF3 /* Main.storyboard */ = {
+		7756F9E727FEDCFB006F6EF3 /* SignInStoryBoard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7756F9E827FEDCFB006F6EF3 /* Base */,
 			);
-			name = Main.storyboard;
+			name = SignInStoryBoard.storyboard;
 			sourceTree = "<group>";
 		};
 		7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */ = {
@@ -435,7 +495,7 @@
 				INFOPLIST_FILE = "Instagram-CloneCoding/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignInStoryBoard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,7 +524,7 @@
 				INFOPLIST_FILE = "Instagram-CloneCoding/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SignInStoryBoard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
