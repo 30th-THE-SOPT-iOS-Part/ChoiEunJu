@@ -21,6 +21,10 @@ extension UIColor {
         return UIColor(red: 55.0 / 255.0, green: 151.0 / 255.0, blue: 239.0 / 255.0, alpha: 1.0)
     }
     
+    @nonobjc class var defaultBlue: UIColor {
+        return UIColor(red: 149.0 / 255.0, green: 200.0 / 255.0, blue: 248.0 / 255.0, alpha: 1.0)
+    }
+    
     @nonobjc class var strokeBlack: UIColor {
         return UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.1)
     }
