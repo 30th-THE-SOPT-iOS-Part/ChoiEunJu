@@ -14,6 +14,7 @@
 		772F6772281068B70099A8C0 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 772F6771281068B70099A8C0 /* SF-Pro-Text-Regular.otf */; };
 		772F6774281069B40099A8C0 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F6773281069B40099A8C0 /* UIFont+.swift */; };
 		772F677828106B610099A8C0 /* InstagramBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F677728106B610099A8C0 /* InstagramBtn.swift */; };
+		772F677A28106E9D0099A8C0 /* InstagramTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F677928106E9D0099A8C0 /* InstagramTextField.swift */; };
 		7756F9E227FEDCFB006F6EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E127FEDCFB006F6EF3 /* AppDelegate.swift */; };
 		7756F9E427FEDCFB006F6EF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E327FEDCFB006F6EF3 /* SceneDelegate.swift */; };
 		7756F9E627FEDCFB006F6EF3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E527FEDCFB006F6EF3 /* SignInViewController.swift */; };
@@ -45,6 +46,7 @@
 		772F6771281068B70099A8C0 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Regular.otf"; path = "../../../../../../../../../../../Library/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		772F6773281069B40099A8C0 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		772F677728106B610099A8C0 /* InstagramBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramBtn.swift; sourceTree = "<group>"; };
+		772F677928106E9D0099A8C0 /* InstagramTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTextField.swift; sourceTree = "<group>"; };
 		7756F9DE27FEDCFB006F6EF3 /* Instagram-CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-CloneCoding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7756F9E127FEDCFB006F6EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7756F9E327FEDCFB006F6EF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 				7756F9E427FEDCFB006F6EF3 /* SceneDelegate.swift in Sources */,
 				7756F9FF27FF1F70006F6EF3 /* UIView+.swift in Sources */,
 				772F6769281064000099A8C0 /* UIColor+.swift in Sources */,
+				772F677A28106E9D0099A8C0 /* InstagramTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
