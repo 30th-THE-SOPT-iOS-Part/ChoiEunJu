@@ -88,6 +88,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		772F676A281067B00099A8C0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				772F676B281068680099A8C0 /* SF-Pro-Text-Semibold.otf */,
+				772F676D281068780099A8C0 /* SF-Pro-Text-Bold.otf */,
+				772F6771281068B70099A8C0 /* SF-Pro-Text-Regular.otf */,
+				772F676F281068860099A8C0 /* SF-Pro-Text-Medium.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		772F677528106B220099A8C0 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				772F677628106B360099A8C0 /* Class */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		772F677628106B360099A8C0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				772F677728106B610099A8C0 /* InstagramBtn.swift */,
+				772F677928106E9D0099A8C0 /* InstagramTextField.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 		7756F9D527FEDCFB006F6EF3 = {
 			isa = PBXGroup;
 			children = (
@@ -140,7 +168,9 @@
 			isa = PBXGroup;
 			children = (
 				77D9ECF228013AC4000EA76A /* Struct */,
+				772F677528106B220099A8C0 /* UIComponent */,
 				7756F9FB27FF1EE1006F6EF3 /* Extension */,
+				772F676A281067B00099A8C0 /* Font */,
 				7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */,
 			);
 			path = Global;
@@ -182,6 +212,7 @@
 				7756FA2328009F40006F6EF3 /* UITextField+.swift */,
 				7756FA0227FF2309006F6EF3 /* Adjusted+.swift */,
 				772F6768281064000099A8C0 /* UIColor+.swift */,
+				772F6773281069B40099A8C0 /* UIFont+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
