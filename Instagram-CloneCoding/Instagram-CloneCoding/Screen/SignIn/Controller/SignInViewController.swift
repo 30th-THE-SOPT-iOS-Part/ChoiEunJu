@@ -94,36 +94,33 @@ extension SignInViewController {
         signUpContentView.addSubviews([signUpBtn, signUpGuideLabel])
         
         logoImgView.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(150)
+            $0.top.equalToSuperview().inset(126)
             $0.centerX.equalToSuperview()
             $0.width.equalTo(175)
             $0.height.equalTo(50)
         }
         
         idTextField.snp.makeConstraints {
-            $0.top.equalTo(logoImgView.snp.bottom).offset(40)
-            $0.leading.equalToSuperview().offset(20)
-            $0.trailing.equalToSuperview().offset(-20)
-            $0.height.equalTo(45)
+            $0.top.equalTo(logoImgView.snp.bottom).offset(34)
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.height.equalTo(44)
         }
         
         pwTextField.snp.makeConstraints {
-            $0.top.equalTo(idTextField.snp.bottom).offset(12)
-            $0.leading.equalToSuperview().offset(20)
-            $0.trailing.equalToSuperview().offset(-20)
-            $0.height.equalTo(45)
+            $0.top.equalTo(idTextField.snp.bottom).offset(16)
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.height.equalTo(44)
         }
         
         findPwBtn.snp.makeConstraints {
-            $0.top.equalTo(pwTextField.snp.bottom).offset(12)
+            $0.top.equalTo(pwTextField.snp.bottom).offset(16)
             $0.trailing.equalTo(pwTextField.snp.trailing)
         }
         
         signInBtn.snp.makeConstraints {
-            $0.top.equalTo(findPwBtn.snp.bottom).offset(30)
-            $0.leading.equalToSuperview().offset(20)
-            $0.trailing.equalToSuperview().offset(-20)
-            $0.height.equalTo(50)
+            $0.top.equalTo(findPwBtn.snp.bottom).offset(34)
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.height.equalTo(44)
         }
         
         signUpContentView.snp.makeConstraints {
