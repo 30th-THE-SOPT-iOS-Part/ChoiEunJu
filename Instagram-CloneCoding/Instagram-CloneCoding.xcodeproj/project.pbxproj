@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772F6769281064000099A8C0 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F6768281064000099A8C0 /* UIColor+.swift */; };
 		7756F9E227FEDCFB006F6EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E127FEDCFB006F6EF3 /* AppDelegate.swift */; };
 		7756F9E427FEDCFB006F6EF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E327FEDCFB006F6EF3 /* SceneDelegate.swift */; };
 		7756F9E627FEDCFB006F6EF3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E527FEDCFB006F6EF3 /* SignInViewController.swift */; };
@@ -31,6 +32,7 @@
 		205945C4F3A74670664D4C89 /* Pods-Instagram-CloneCoding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-CloneCoding.release.xcconfig"; path = "Target Support Files/Pods-Instagram-CloneCoding/Pods-Instagram-CloneCoding.release.xcconfig"; sourceTree = "<group>"; };
 		58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_CloneCoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8A8BD4AD8989C437075C34 /* Pods-Instagram-CloneCoding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-CloneCoding.debug.xcconfig"; path = "Target Support Files/Pods-Instagram-CloneCoding/Pods-Instagram-CloneCoding.debug.xcconfig"; sourceTree = "<group>"; };
+		772F6768281064000099A8C0 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		7756F9DE27FEDCFB006F6EF3 /* Instagram-CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-CloneCoding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7756F9E127FEDCFB006F6EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7756F9E327FEDCFB006F6EF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */,
 				7756FA2328009F40006F6EF3 /* UITextField+.swift */,
 				7756FA0227FF2309006F6EF3 /* Adjusted+.swift */,
+				772F6768281064000099A8C0 /* UIColor+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				7756F9FD27FF1F0B006F6EF3 /* UIViewController+.swift in Sources */,
 				7756F9E427FEDCFB006F6EF3 /* SceneDelegate.swift in Sources */,
 				7756F9FF27FF1F70006F6EF3 /* UIView+.swift in Sources */,
+				772F6769281064000099A8C0 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
