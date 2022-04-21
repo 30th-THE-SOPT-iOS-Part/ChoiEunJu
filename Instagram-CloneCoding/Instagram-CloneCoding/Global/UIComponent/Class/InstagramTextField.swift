@@ -24,9 +24,17 @@ class InstagramTextField: UITextField {
     private func setDefaultStyle() {
         self.makeRounded(cornerRadius: 4.adjusted)
         self.font = .SFProTextR(size: 14)
-        self.attributedPlaceholder = NSAttributedString(string: UITextPlaceholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.btnBlue])
+        self.addLeftPadding(10)
         self.layer.borderWidth = 0.5
         self.layer.borderColor = UIColor.strokeBlack.cgColor
         self.backgroundColor = .lightGray
+    }
+    
+    /// placeholder 컬러 변경 메서드
+    func setPlaceholder(color: UIColor) {
+        guard let string = self.placeholder else {
+            return
+        }
+        attributedPlaceholder = NSAttributedString(string: string, attributes: [.foregroundColor: color])
     }
 }
