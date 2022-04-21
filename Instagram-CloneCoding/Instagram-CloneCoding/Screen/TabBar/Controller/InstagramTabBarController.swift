@@ -40,6 +40,23 @@ extension InstagramTabBarController {
         self.setViewControllers(tabs, animated: false)
         
         tabBar.backgroundColor = .white
-        
+        tabBar.tintColor = .black
+        tabBar.unselectedItemTintColor = .black
+    }
+}
+
+// MARK: - UITabBarControllerDelegate
+extension InstagramTabBarController: UITabBarControllerDelegate {
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if item == (self.tabBar.items!)[2] {
+            tabBar.backgroundColor = .black
+            tabBar.tintColor = .white
+            tabBar.unselectedItemTintColor = .white
+            
+        } else {
+            tabBar.backgroundColor = .white
+            tabBar.tintColor = .black
+            tabBar.unselectedItemTintColor = .black
+        }
     }
 }
