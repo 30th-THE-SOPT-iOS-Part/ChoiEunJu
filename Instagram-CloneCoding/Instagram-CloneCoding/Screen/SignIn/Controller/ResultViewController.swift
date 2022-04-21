@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class ResultViewController: UIViewController {
+class ResultViewController: BaseViewController {
 
     // MARK: - Properties
     var userName: String = ""
@@ -46,7 +46,8 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-        setUptapCompleteBtn()
+        setUpTaploginBtn()
+        setUpTapCompleteBtn()
         setUpMessageLabel()
     }
 }
@@ -83,10 +84,20 @@ extension ResultViewController {
 // MARK: - Custom Methods
 extension ResultViewController {
     
-    /// 완료 버튼 tap Action 설정 메서드
-    private func setUptapCompleteBtn() {
-        completeBtn.press {
+    /// 다른 계정으로 로그인하기 버튼 tap Action 설정 메서드
+    private func setUpTaploginBtn() {
+        loginBtn.press {
             self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    /// 완료하기 로그인하기 버튼 tap Action 설정 메서드
+    private func setUpTapCompleteBtn() {
+        completeBtn.press {
+            let homeViewController = InstagramTabBarController()
+            
+            homeViewController.modalPresentationStyle = .fullScreen
+            self.present(homeViewController, animated: true, completion: nil)
         }
     }
     

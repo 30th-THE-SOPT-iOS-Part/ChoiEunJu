@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class MakePasswordViewController: UIViewController {
+class MakePasswordViewController: BaseViewController {
     
     // MARK: - Properties
     var userName: String = ""
@@ -111,7 +111,7 @@ extension MakePasswordViewController {
     /// 다음 버튼 tap Action 설정 메서드
     private func setUpTapNextBtn() {
         nextBtn.press {
-            guard let nextViewController = UIStoryboard.init(name: Identifiers.SignInStoryBoard, bundle: nil).instantiateViewController(withIdentifier: ResultViewController.className) as? ResultViewController else { return }
+            let nextViewController = ResultViewController()
             
             nextViewController.userName = self.userName
             nextViewController.modalPresentationStyle = .fullScreen

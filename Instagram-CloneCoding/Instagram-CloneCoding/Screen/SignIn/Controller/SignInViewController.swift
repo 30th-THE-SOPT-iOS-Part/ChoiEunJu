@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class SignInViewController: UIViewController {
+class SignInViewController: BaseViewController {
 
     // MARK: - Properties
     private let logoImgView = UIImageView().then {
@@ -156,7 +156,7 @@ extension SignInViewController {
     /// 로그인 버튼 tap Action 설정 메서드
     private func setUpTapSignInBtn() {
         signInBtn.press {
-            guard let resultViewController = self.storyboard?.instantiateViewController(withIdentifier: ResultViewController.className) as? ResultViewController else { return }
+            let resultViewController = ResultViewController()
             
             resultViewController.userName = self.idTextField.text ?? ""
             resultViewController.modalPresentationStyle = .fullScreen
@@ -167,8 +167,7 @@ extension SignInViewController {
     /// 가입하기 버튼 tap Action 설정 메서드
     private func setUpTapSignUpBtn() {
         signUpBtn.press {
-            guard let signUpViewController = UIStoryboard.init(name: Identifiers.SignUpStoryBoard, bundle: nil).instantiateViewController(withIdentifier: MakeUserNameViewController.className) as? MakeUserNameViewController else { return }
-            
+            let signUpViewController = MakeUserNameViewController()
             self.navigationController?.pushViewController(signUpViewController, animated: true)
         }
     }

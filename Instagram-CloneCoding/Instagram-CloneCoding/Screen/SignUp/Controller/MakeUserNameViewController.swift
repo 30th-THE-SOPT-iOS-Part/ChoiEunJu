@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 import Then
 
-class MakeUserNameViewController: UIViewController {
+class MakeUserNameViewController: BaseViewController {
 
     // MARK: - Properties
     private let backBtn = UIButton().then {
@@ -109,7 +109,7 @@ extension MakeUserNameViewController {
     /// 다음 버튼 tap Action 설정 메서드
     private func setUpTapNextBtn() {
         nextBtn.press {
-            guard let nextViewController = self.storyboard?.instantiateViewController(withIdentifier: MakePasswordViewController.className) as? MakePasswordViewController else { return }
+            let nextViewController = MakePasswordViewController()
             
             nextViewController.userName = self.userNameTextField.text ?? ""
             self.navigationController?.pushViewController(nextViewController, animated: true)
