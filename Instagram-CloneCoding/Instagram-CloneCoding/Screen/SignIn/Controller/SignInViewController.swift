@@ -16,12 +16,12 @@ class SignInViewController: UIViewController {
         $0.image = UIImage(named: "Instagram Black Logo")
     }
     
-    let idTextField = InstagramTextField().then {
+    private let idTextField = InstagramTextField().then {
         $0.placeholder = "전화번호, 사용자 이름 또는 이메일"
         $0.setPlaceholder(color: .darkGray)
     }
     
-    let pwTextField = InstagramTextField().then {
+    private let pwTextField = InstagramTextField().then {
         $0.placeholder = "비밀번호"
         $0.setPlaceholder(color: .darkGray)
         $0.isSecureTextEntry = true
