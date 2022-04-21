@@ -14,19 +14,19 @@ enum FontWeight {
 extension UIFont {
     
     // MARK: SF-Pro-Text Font
-    class func SFProTextB(size: CGFloat) -> UIFont {
-        return UIFont(name: "SF-Pro-Text-Bold", size: size)!
+    class func SFProTextB(size: CGFloat) -> UIFont! {
+        return UIFont(name: "SFProText-Bold", size: size)
     }
     
-    class func SFProTextSB(size: CGFloat) -> UIFont {
-        return UIFont(name: "SF-Pro-Text-Semibold", size: size)!
+    class func SFProTextSB(size: CGFloat) -> UIFont! {
+        return UIFont(name: "SFProText-Semibold", size: size)
     }
     
-    class func SFProTextR(size: CGFloat) -> UIFont {
-        return UIFont(name: "SF-Pro-Text-Regular", size: size)!
+    class func SFProTextR(size: CGFloat) -> UIFont! {
+        return UIFont(name: "SFProText-Regular", size: size)
     }
     
-    class func SFProTextM(size: CGFloat) -> UIFont {
-        return UIFont(name: "SF-Pro-Text-Medium", size: size)!
+    class func SFProTextM(size: CGFloat) -> UIFont! {
+        return UIFont(name: "SFProText-Medium", size: size)
     }
 }
