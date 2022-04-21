@@ -36,6 +36,12 @@ class ResultViewController: UIViewController {
         $0.isActivated = true
     }
     
+    private let loginBtn = UIButton().then {
+        $0.setTitle("다른 계정으로 로그인하기", for: .normal)
+        $0.titleLabel?.font = .SFProTextR(size: 14)
+        $0.setTitleColor(.btnBlue, for: .normal)
+    }
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +54,7 @@ class ResultViewController: UIViewController {
 // MARK: - UI
 extension ResultViewController {
     private func configureUI() {
-        view.addSubviews([messageLabel, descriptionLabel, completeBtn])
+        view.addSubviews([messageLabel, descriptionLabel, completeBtn, loginBtn])
         
         messageLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(310)
@@ -65,6 +71,11 @@ extension ResultViewController {
             $0.leading.equalToSuperview().inset(38)
             $0.trailing.equalToSuperview().inset(37)
             $0.height.equalTo(40)
+        }
+        
+        loginBtn.snp.makeConstraints {
+            $0.top.equalTo(completeBtn.snp.bottom).offset(18)
+            $0.centerX.equalToSuperview()
         }
     }
 }
