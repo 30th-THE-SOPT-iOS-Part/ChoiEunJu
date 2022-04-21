@@ -39,6 +39,7 @@ extension InstagramTabBarController {
         /// ViewController에 루트로 설정
         self.setViewControllers(tabs, animated: false)
         
+        /// 탭 바 디폴트 UI  설정 
         tabBar.backgroundColor = .white
         tabBar.tintColor = .black
         tabBar.unselectedItemTintColor = .black
@@ -52,7 +53,6 @@ extension InstagramTabBarController: UITabBarControllerDelegate {
             tabBar.backgroundColor = .black
             tabBar.tintColor = .white
             tabBar.unselectedItemTintColor = .white
-            
         } else {
             tabBar.backgroundColor = .white
             tabBar.tintColor = .black
