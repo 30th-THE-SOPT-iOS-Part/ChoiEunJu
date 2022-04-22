@@ -13,7 +13,6 @@ class InstagramBtn: UIButton {
     var isActivated: Bool = false {
         didSet {
             self.backgroundColor = self.isActivated ? activatedBgColor : normalBgColor
-            //self.setTitleColor(fontColor, for: .normal)
             self.isEnabled = isActivated
         }
     }
@@ -39,7 +38,6 @@ class InstagramBtn: UIButton {
         self.makeRounded(cornerRadius: 4.adjusted)
         self.titleLabel?.font = .SFProTextSB(size: 14)
         self.backgroundColor = self.normalBgColor
-        //self.tintColor = UIColor.mainDefault
         self.setTitleColor(self.fontColor, for: .normal)
     }
     
