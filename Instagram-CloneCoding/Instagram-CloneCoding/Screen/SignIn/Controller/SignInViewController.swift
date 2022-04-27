@@ -69,11 +69,6 @@ class SignInViewController: BaseViewController {
     }
     
     // MARK: - Life Cycle
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        resetTextField()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -82,6 +77,11 @@ class SignInViewController: BaseViewController {
         setUpTapClearBtn()
         setUpTapEyeBtn()
         setUpTextField()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        resetTextField()
     }
 }
 
