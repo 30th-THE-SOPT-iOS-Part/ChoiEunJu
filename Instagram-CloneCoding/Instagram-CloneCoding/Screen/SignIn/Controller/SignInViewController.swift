@@ -9,60 +9,58 @@ import UIKit
 import SnapKit
 import Then
 
-class SignInViewController: UIViewController {
+class SignInViewController: BaseViewController {
 
     // MARK: - Properties
     private let logoImgView = UIImageView().then {
         $0.image = UIImage(named: "Instagram Black Logo")
     }
     
-    private let idTextField = UITextField().then {
+    private let idTextField = InstagramTextField().then {
         $0.placeholder = "전화번호, 사용자 이름 또는 이메일"
-        $0.font = .systemFont(ofSize: 14, weight: .regular)
-        $0.borderStyle = .roundedRect
+        $0.setPlaceholder(color: .darkGray)
     }
     
-    private let pwTextField = UITextField().then {
+    private let pwTextField = InstagramTextField().then {
         $0.placeholder = "비밀번호"
+        $0.setPlaceholder(color: .darkGray)
         $0.isSecureTextEntry = true
-        $0.font = .systemFont(ofSize: 14, weight: .regular)
-        $0.borderStyle = .roundedRect
     }
     
     private let findPwBtn = UIButton().then {
         $0.setTitle("비밀번호를 잊으셨나요?", for: .normal)
-        $0.setTitleColor(.systemBlue, for: .normal)
-        $0.titleLabel?.font = .systemFont(ofSize: 11)
+        $0.setTitleColor(.btnBlue, for: .normal)
+        $0.titleLabel?.font = .SFProTextM(size: 10)
     }
     
-    private let signInBtn = UIButton().then {
+    private let signInBtn = InstagramBtn().then {
         $0.setTitle("로그인", for: .normal)
-        $0.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
-        $0.setTitleColor(.white, for: .normal)
-        $0.backgroundColor = .systemBlue
-        $0.alpha = 0.5
-        $0.makeRounded(cornerRadius: 5.adjusted)
-        $0.isEnabled = false
+        $0.isActivated = false
     }
     
-    private let signUpContentView = UIView()
+    private lazy var signUpStackView = UIStackView().then {
+        $0.axis = .horizontal
+        $0.addArrangedSubview(signUpGuideLabel)
+        $0.addArrangedSubview(signUpBtn)
+        $0.spacing = 5
+    }
     
     private let signUpBtn = UIButton().then {
         $0.setTitle("가입하기", for: .normal)
-        $0.titleLabel?.font = .systemFont(ofSize: 14, weight: .regular)
-        $0.setTitleColor(.systemBlue, for: .normal)
+        $0.titleLabel?.font = .SFProTextR(size: 14)
+        $0.setTitleColor(.btnBlue, for: .normal)
     }
     
     private let signUpGuideLabel = UILabel().then {
         $0.text = "계정이 없으신가요?"
-        $0.textColor = .gray
-        $0.font = .systemFont(ofSize: 14, weight: .regular)
+        $0.textColor = .darkGray
+        $0.font = .SFProTextR(size: 14)
         $0.sizeToFit()
     }
     
     private let clearBtn = UIButton().then {
         $0.setImage(UIImage(systemName: "xmark.circle.fill"), for: .normal)
-        $0.tintColor = .lightGray
+        $0.tintColor = .systemGray
         $0.isHidden = true
     }
     
@@ -71,11 +69,6 @@ class SignInViewController: UIViewController {
     }
     
     // MARK: - Life Cycle
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        resetTextField()
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -85,70 +78,62 @@ class SignInViewController: UIViewController {
         setUpTapEyeBtn()
         setUpTextField()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        resetTextField()
+    }
 }
 
 // MARK: - UI
 extension SignInViewController {
     private func configureUI() {
-        view.addSubviews([logoImgView, idTextField, pwTextField, findPwBtn, signInBtn, signUpContentView, clearBtn, eyeBtn])
-        signUpContentView.addSubviews([signUpBtn, signUpGuideLabel])
+        view.addSubviews([logoImgView, idTextField, pwTextField, findPwBtn, signInBtn, signUpStackView, clearBtn, eyeBtn])
         
         logoImgView.snp.makeConstraints {
-            $0.top.equalToSuperview().offset(150)
+            $0.top.equalToSuperview().inset(126)
             $0.centerX.equalToSuperview()
             $0.width.equalTo(175)
             $0.height.equalTo(50)
         }
         
         idTextField.snp.makeConstraints {
-            $0.top.equalTo(logoImgView.snp.bottom).offset(40)
-            $0.leading.equalToSuperview().offset(20)
-            $0.trailing.equalToSuperview().offset(-20)
-            $0.height.equalTo(45)
+            $0.top.equalTo(logoImgView.snp.bottom).offset(34)
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.height.equalTo(44)
         }
         
         pwTextField.snp.makeConstraints {
-            $0.top.equalTo(idTextField.snp.bottom).offset(12)
-            $0.leading.equalToSuperview().offset(20)
-            $0.trailing.equalToSuperview().offset(-20)
-            $0.height.equalTo(45)
+            $0.top.equalTo(idTextField.snp.bottom).offset(16)
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.height.equalTo(44)
         }
         
         findPwBtn.snp.makeConstraints {
-            $0.top.equalTo(pwTextField.snp.bottom).offset(12)
-            $0.trailing.equalTo(pwTextField.snp.trailing)
+            $0.top.equalTo(pwTextField.snp.bottom).offset(16)
+            $0.leading.equalTo(pwTextField.snp.leading)
         }
         
         signInBtn.snp.makeConstraints {
-            $0.top.equalTo(findPwBtn.snp.bottom).offset(30)
-            $0.leading.equalToSuperview().offset(20)
-            $0.trailing.equalToSuperview().offset(-20)
-            $0.height.equalTo(50)
+            $0.top.equalTo(findPwBtn.snp.bottom).offset(34)
+            $0.leading.trailing.equalToSuperview().inset(16)
+            $0.height.equalTo(44)
         }
         
-        signUpContentView.snp.makeConstraints {
-            $0.top.equalTo(signInBtn.snp.bottom).offset(35)
+        signUpStackView.snp.makeConstraints {
+            $0.top.equalTo(signInBtn.snp.bottom).offset(34)
             $0.centerX.equalToSuperview()
         }
         
-        signUpGuideLabel.snp.makeConstraints {
-            $0.top.bottom.leading.equalTo(signUpContentView)
-        }
-        
-        signUpBtn.snp.makeConstraints {
-            $0.top.bottom.trailing.equalTo(signUpContentView)
-            $0.leading.equalTo(signUpGuideLabel.snp.trailing).offset(3)
-        }
-        
         clearBtn.snp.makeConstraints {
-            $0.trailing.equalTo(idTextField.snp.trailing).offset(-14)
+            $0.trailing.equalTo(idTextField.snp.trailing).inset(14)
             $0.centerY.equalTo(idTextField.snp.centerY)
             $0.width.equalTo(20)
             $0.height.equalTo(20)
         }
         
         eyeBtn.snp.makeConstraints {
-            $0.trailing.equalTo(pwTextField.snp.trailing).offset(-14)
+            $0.trailing.equalTo(pwTextField.snp.trailing).inset(14)
             $0.centerY.equalTo(pwTextField.snp.centerY)
             $0.width.equalTo(20)
             $0.height.equalTo(20)
@@ -162,18 +147,16 @@ extension SignInViewController {
     /// 로그인 버튼 활성화 조건 검사하는 메서드
     private func setUpSignInBtnStatus() {
         if !idTextField.isEmpty && !pwTextField.isEmpty {
-            signInBtn.isEnabled = true
-            signInBtn.alpha = 1
+            signInBtn.isActivated = true
         } else {
-            signInBtn.isEnabled = false
-            signInBtn.alpha = 0.5
+            signInBtn.isActivated = false
         }
     }
     
     /// 로그인 버튼 tap Action 설정 메서드
     private func setUpTapSignInBtn() {
         signInBtn.press {
-            guard let resultViewController = self.storyboard?.instantiateViewController(withIdentifier: ResultViewController.className) as? ResultViewController else { return }
+            let resultViewController = ResultViewController()
             
             resultViewController.userName = self.idTextField.text ?? ""
             resultViewController.modalPresentationStyle = .fullScreen
@@ -184,8 +167,7 @@ extension SignInViewController {
     /// 가입하기 버튼 tap Action 설정 메서드
     private func setUpTapSignUpBtn() {
         signUpBtn.press {
-            guard let signUpViewController = UIStoryboard.init(name: Identifiers.SignUpStoryBoard, bundle: nil).instantiateViewController(withIdentifier: MakeUserNameViewController.className) as? MakeUserNameViewController else { return }
-            
+            let signUpViewController = MakeUserNameViewController()
             self.navigationController?.pushViewController(signUpViewController, animated: true)
         }
     }

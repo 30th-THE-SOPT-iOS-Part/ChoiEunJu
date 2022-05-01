@@ -7,10 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772F6769281064000099A8C0 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F6768281064000099A8C0 /* UIColor+.swift */; };
+		772F676C281068680099A8C0 /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 772F676B281068680099A8C0 /* SF-Pro-Text-Semibold.otf */; };
+		772F676E281068780099A8C0 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 772F676D281068780099A8C0 /* SF-Pro-Text-Bold.otf */; };
+		772F6770281068860099A8C0 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 772F676F281068860099A8C0 /* SF-Pro-Text-Medium.otf */; };
+		772F6772281068B70099A8C0 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 772F6771281068B70099A8C0 /* SF-Pro-Text-Regular.otf */; };
+		772F6774281069B40099A8C0 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F6773281069B40099A8C0 /* UIFont+.swift */; };
+		772F677828106B610099A8C0 /* InstagramBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F677728106B610099A8C0 /* InstagramBtn.swift */; };
+		772F677A28106E9D0099A8C0 /* InstagramTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772F677928106E9D0099A8C0 /* InstagramTextField.swift */; };
+		773136E22811286200E69459 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773136E12811286200E69459 /* HomeViewController.swift */; };
+		773136E42811287200E69459 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773136E32811287200E69459 /* SearchViewController.swift */; };
+		773136E62811288200E69459 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773136E52811288100E69459 /* VideoViewController.swift */; };
+		773136E82811288C00E69459 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773136E72811288C00E69459 /* ShopViewController.swift */; };
+		773136EA2811289B00E69459 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773136E92811289B00E69459 /* MypageViewController.swift */; };
+		773136EE281189D900E69459 /* InstagramTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773136ED281189D900E69459 /* InstagramTabBarController.swift */; };
+		773136F12811A5F500E69459 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773136F02811A5F500E69459 /* BaseViewController.swift */; };
 		7756F9E227FEDCFB006F6EF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E127FEDCFB006F6EF3 /* AppDelegate.swift */; };
 		7756F9E427FEDCFB006F6EF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E327FEDCFB006F6EF3 /* SceneDelegate.swift */; };
 		7756F9E627FEDCFB006F6EF3 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9E527FEDCFB006F6EF3 /* SignInViewController.swift */; };
-		7756F9E927FEDCFB006F6EF3 /* SignInStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756F9E727FEDCFB006F6EF3 /* SignInStoryBoard.storyboard */; };
 		7756F9EB27FEDCFD006F6EF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7756F9EA27FEDCFD006F6EF3 /* Assets.xcassets */; };
 		7756F9EE27FEDCFD006F6EF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */; };
 		7756F9FD27FF1F0B006F6EF3 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756F9FC27FF1F0B006F6EF3 /* UIViewController+.swift */; };
@@ -19,11 +33,9 @@
 		7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA0227FF2309006F6EF3 /* Adjusted+.swift */; };
 		7756FA0F27FFD5E9006F6EF3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA0E27FFD5E9006F6EF3 /* ResultViewController.swift */; };
 		7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */; };
-		7756FA1528001D07006F6EF3 /* SignUpStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */; };
 		7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */; };
 		7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */; };
 		7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA2328009F40006F6EF3 /* UITextField+.swift */; };
-		77D9ECF428013ADC000EA76A /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D9ECF328013ADC000EA76A /* Identifiers.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,11 +43,25 @@
 		205945C4F3A74670664D4C89 /* Pods-Instagram-CloneCoding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-CloneCoding.release.xcconfig"; path = "Target Support Files/Pods-Instagram-CloneCoding/Pods-Instagram-CloneCoding.release.xcconfig"; sourceTree = "<group>"; };
 		58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram_CloneCoding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F8A8BD4AD8989C437075C34 /* Pods-Instagram-CloneCoding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram-CloneCoding.debug.xcconfig"; path = "Target Support Files/Pods-Instagram-CloneCoding/Pods-Instagram-CloneCoding.debug.xcconfig"; sourceTree = "<group>"; };
+		772F6768281064000099A8C0 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		772F676B281068680099A8C0 /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Semibold.otf"; path = "../../../../../../../../../../../Library/Fonts/SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		772F676D281068780099A8C0 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Bold.otf"; path = "../../../../../../../../../../../Library/Fonts/SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		772F676F281068860099A8C0 /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Medium.otf"; path = "../../../../../../../../../../../Library/Fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		772F6771281068B70099A8C0 /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Text-Regular.otf"; path = "../../../../../../../../../../../Library/Fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		772F6773281069B40099A8C0 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		772F677728106B610099A8C0 /* InstagramBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramBtn.swift; sourceTree = "<group>"; };
+		772F677928106E9D0099A8C0 /* InstagramTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTextField.swift; sourceTree = "<group>"; };
+		773136E12811286200E69459 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		773136E32811287200E69459 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		773136E52811288100E69459 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		773136E72811288C00E69459 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		773136E92811289B00E69459 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		773136ED281189D900E69459 /* InstagramTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramTabBarController.swift; sourceTree = "<group>"; };
+		773136F02811A5F500E69459 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7756F9DE27FEDCFB006F6EF3 /* Instagram-CloneCoding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instagram-CloneCoding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7756F9E127FEDCFB006F6EF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7756F9E327FEDCFB006F6EF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7756F9E527FEDCFB006F6EF3 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		7756F9E827FEDCFB006F6EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignInStoryBoard.storyboard; sourceTree = "<group>"; };
 		7756F9EA27FEDCFD006F6EF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7756F9ED27FEDCFD006F6EF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7756F9EF27FEDCFD006F6EF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,11 +71,9 @@
 		7756FA0227FF2309006F6EF3 /* Adjusted+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Adjusted+.swift"; sourceTree = "<group>"; };
 		7756FA0E27FFD5E9006F6EF3 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
-		7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryBoard.storyboard; sourceTree = "<group>"; };
 		7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeUserNameViewController.swift; sourceTree = "<group>"; };
 		7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePasswordViewController.swift; sourceTree = "<group>"; };
 		7756FA2328009F40006F6EF3 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
-		77D9ECF328013ADC000EA76A /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +94,78 @@
 				58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		772F676A281067B00099A8C0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				772F676B281068680099A8C0 /* SF-Pro-Text-Semibold.otf */,
+				772F676D281068780099A8C0 /* SF-Pro-Text-Bold.otf */,
+				772F6771281068B70099A8C0 /* SF-Pro-Text-Regular.otf */,
+				772F676F281068860099A8C0 /* SF-Pro-Text-Medium.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		772F677528106B220099A8C0 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				772F677628106B360099A8C0 /* Class */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		772F677628106B360099A8C0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				772F677728106B610099A8C0 /* InstagramBtn.swift */,
+				772F677928106E9D0099A8C0 /* InstagramTextField.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		773136DF2811282500E69459 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				773136E02811282F00E69459 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		773136E02811282F00E69459 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				773136E12811286200E69459 /* HomeViewController.swift */,
+				773136E32811287200E69459 /* SearchViewController.swift */,
+				773136E52811288100E69459 /* VideoViewController.swift */,
+				773136E72811288C00E69459 /* ShopViewController.swift */,
+				773136E92811289B00E69459 /* MypageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		773136EB281189A700E69459 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				773136EC281189B100E69459 /* Controller */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		773136EC281189B100E69459 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				773136ED281189D900E69459 /* InstagramTabBarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		773136EF2811A5D300E69459 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				773136F02811A5F500E69459 /* BaseViewController.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 		7756F9D527FEDCFB006F6EF3 = {
@@ -114,6 +210,8 @@
 		7756F9F627FEE633006F6EF3 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				773136EB281189A700E69459 /* TabBar */,
+				773136DF2811282500E69459 /* Main */,
 				7756F9F827FEE6BD006F6EF3 /* SignIn */,
 				7756FA1228001CD9006F6EF3 /* SignUp */,
 			);
@@ -123,8 +221,11 @@
 		7756F9F727FEE690006F6EF3 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				773136EF2811A5D300E69459 /* Class */,
 				77D9ECF228013AC4000EA76A /* Struct */,
+				772F677528106B220099A8C0 /* UIComponent */,
 				7756F9FB27FF1EE1006F6EF3 /* Extension */,
+				772F676A281067B00099A8C0 /* Font */,
 				7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */,
 			);
 			path = Global;
@@ -133,18 +234,9 @@
 		7756F9F827FEE6BD006F6EF3 /* SignIn */ = {
 			isa = PBXGroup;
 			children = (
-				7756F9F927FEE6C8006F6EF3 /* Storyboard */,
 				7756F9FA27FEE6D2006F6EF3 /* Controller */,
 			);
 			path = SignIn;
-			sourceTree = "<group>";
-		};
-		7756F9F927FEE6C8006F6EF3 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				7756F9E727FEDCFB006F6EF3 /* SignInStoryBoard.storyboard */,
-			);
-			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		7756F9FA27FEE6D2006F6EF3 /* Controller */ = {
@@ -165,6 +257,8 @@
 				7756FA1027FFDDDE006F6EF3 /* UILabel+.swift */,
 				7756FA2328009F40006F6EF3 /* UITextField+.swift */,
 				7756FA0227FF2309006F6EF3 /* Adjusted+.swift */,
+				772F6768281064000099A8C0 /* UIColor+.swift */,
+				772F6773281069B40099A8C0 /* UIFont+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -172,18 +266,9 @@
 		7756FA1228001CD9006F6EF3 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				7756FA1328001CE5006F6EF3 /* Storyboard */,
 				7756FA1A28001D6C006F6EF3 /* Controller */,
 			);
 			path = SignUp;
-			sourceTree = "<group>";
-		};
-		7756FA1328001CE5006F6EF3 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				7756FA1428001D07006F6EF3 /* SignUpStoryBoard.storyboard */,
-			);
-			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		7756FA1A28001D6C006F6EF3 /* Controller */ = {
@@ -198,7 +283,6 @@
 		77D9ECF228013AC4000EA76A /* Struct */ = {
 			isa = PBXGroup;
 			children = (
-				77D9ECF328013ADC000EA76A /* Identifiers.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -273,9 +357,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7756F9EE27FEDCFD006F6EF3 /* LaunchScreen.storyboard in Resources */,
-				7756FA1528001D07006F6EF3 /* SignUpStoryBoard.storyboard in Resources */,
+				772F676E281068780099A8C0 /* SF-Pro-Text-Bold.otf in Resources */,
+				772F676C281068680099A8C0 /* SF-Pro-Text-Semibold.otf in Resources */,
 				7756F9EB27FEDCFD006F6EF3 /* Assets.xcassets in Resources */,
-				7756F9E927FEDCFB006F6EF3 /* SignInStoryBoard.storyboard in Resources */,
+				772F6770281068860099A8C0 /* SF-Pro-Text-Medium.otf in Resources */,
+				772F6772281068B70099A8C0 /* SF-Pro-Text-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,32 +415,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */,
+				773136EE281189D900E69459 /* InstagramTabBarController.swift in Sources */,
 				7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */,
 				7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */,
 				7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */,
+				773136F12811A5F500E69459 /* BaseViewController.swift in Sources */,
+				773136E42811287200E69459 /* SearchViewController.swift in Sources */,
+				773136E82811288C00E69459 /* ShopViewController.swift in Sources */,
 				7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */,
+				773136E22811286200E69459 /* HomeViewController.swift in Sources */,
 				7756F9E627FEDCFB006F6EF3 /* SignInViewController.swift in Sources */,
 				7756FA0127FF2294006F6EF3 /* UIButton+.swift in Sources */,
+				772F677828106B610099A8C0 /* InstagramBtn.swift in Sources */,
+				772F6774281069B40099A8C0 /* UIFont+.swift in Sources */,
 				7756FA0F27FFD5E9006F6EF3 /* ResultViewController.swift in Sources */,
 				7756F9E227FEDCFB006F6EF3 /* AppDelegate.swift in Sources */,
-				77D9ECF428013ADC000EA76A /* Identifiers.swift in Sources */,
 				7756F9FD27FF1F0B006F6EF3 /* UIViewController+.swift in Sources */,
 				7756F9E427FEDCFB006F6EF3 /* SceneDelegate.swift in Sources */,
 				7756F9FF27FF1F70006F6EF3 /* UIView+.swift in Sources */,
+				772F6769281064000099A8C0 /* UIColor+.swift in Sources */,
+				773136E62811288200E69459 /* VideoViewController.swift in Sources */,
+				772F677A28106E9D0099A8C0 /* InstagramTextField.swift in Sources */,
+				773136EA2811289B00E69459 /* MypageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7756F9E727FEDCFB006F6EF3 /* SignInStoryBoard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7756F9E827FEDCFB006F6EF3 /* Base */,
-			);
-			name = SignInStoryBoard.storyboard;
-			sourceTree = "<group>";
-		};
 		7756F9EC27FEDCFD006F6EF3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -495,7 +583,7 @@
 				INFOPLIST_FILE = "Instagram-CloneCoding/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = SignInStoryBoard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -524,7 +612,7 @@
 				INFOPLIST_FILE = "Instagram-CloneCoding/Support/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = SignInStoryBoard;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
