@@ -124,22 +124,18 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
-		773136DF2811282500E69459 /* Main */ = {
+		773136DF2811282500E69459 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				773136E02811282F00E69459 /* Controller */,
 			);
-			path = Main;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		773136E02811282F00E69459 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				773136E12811286200E69459 /* HomeViewController.swift */,
-				773136E32811287200E69459 /* SearchViewController.swift */,
-				773136E52811288100E69459 /* VideoViewController.swift */,
-				773136E72811288C00E69459 /* ShopViewController.swift */,
-				773136E92811289B00E69459 /* MypageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,9 +207,13 @@
 			isa = PBXGroup;
 			children = (
 				773136EB281189A700E69459 /* TabBar */,
-				773136DF2811282500E69459 /* Main */,
-				7756F9F827FEE6BD006F6EF3 /* SignIn */,
 				7756FA1228001CD9006F6EF3 /* SignUp */,
+				7756F9F827FEE6BD006F6EF3 /* SignIn */,
+				773136DF2811282500E69459 /* Home */,
+				773136E32811287200E69459 /* SearchViewController.swift */,
+				773136E52811288100E69459 /* VideoViewController.swift */,
+				773136E72811288C00E69459 /* ShopViewController.swift */,
+				773136E92811289B00E69459 /* MypageViewController.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
