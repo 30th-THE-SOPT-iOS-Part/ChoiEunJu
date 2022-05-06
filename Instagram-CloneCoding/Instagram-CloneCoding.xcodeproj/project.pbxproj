@@ -38,6 +38,7 @@
 		7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA2328009F40006F6EF3 /* UITextField+.swift */; };
 		7779201F2822EE760094A3DD /* HomePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779201E2822EE760094A3DD /* HomePostTableViewCell.swift */; };
 		7779204E282448BF0094A3DD /* PostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779204D282448BF0094A3DD /* PostDataModel.swift */; };
+		777920512824EABD0094A3DD /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777920502824EABC0094A3DD /* ProfileCollectionViewCell.swift */; };
 		777920532824F6CF0094A3DD /* ProfileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777920522824F6CF0094A3DD /* ProfileDataModel.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		7756FA2328009F40006F6EF3 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		7779201E2822EE760094A3DD /* HomePostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostTableViewCell.swift; sourceTree = "<group>"; };
 		7779204D282448BF0094A3DD /* PostDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataModel.swift; sourceTree = "<group>"; };
+		777920502824EABC0094A3DD /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		777920522824F6CF0094A3DD /* ProfileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -291,6 +293,7 @@
 		7779201C2822EE280094A3DD /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				7779204F2824EA9C0094A3DD /* CollectionViewCell */,
 				7779201D2822EE2F0094A3DD /* TableViewCell */,
 			);
 			path = Cell;
@@ -311,6 +314,14 @@
 				777920522824F6CF0094A3DD /* ProfileDataModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7779204F2824EA9C0094A3DD /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				777920502824EABC0094A3DD /* ProfileCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		77D9ECF228013AC4000EA76A /* Struct */ = {
@@ -456,6 +467,7 @@
 				7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */,
 				773136F12811A5F500E69459 /* BaseViewController.swift in Sources */,
 				773136E42811287200E69459 /* SearchViewController.swift in Sources */,
+				777920512824EABD0094A3DD /* ProfileCollectionViewCell.swift in Sources */,
 				773136E82811288C00E69459 /* ShopViewController.swift in Sources */,
 				7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */,
 				773136E22811286200E69459 /* HomeViewController.swift in Sources */,
