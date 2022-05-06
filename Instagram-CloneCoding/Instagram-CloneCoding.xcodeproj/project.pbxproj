@@ -40,6 +40,7 @@
 		7779204E282448BF0094A3DD /* PostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779204D282448BF0094A3DD /* PostDataModel.swift */; };
 		777920512824EABD0094A3DD /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777920502824EABC0094A3DD /* ProfileCollectionViewCell.swift */; };
 		777920532824F6CF0094A3DD /* ProfileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777920522824F6CF0094A3DD /* ProfileDataModel.swift */; };
+		777920572824F7E20094A3DD /* HomeStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777920562824F7E20094A3DD /* HomeStoryTableViewCell.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		7779204D282448BF0094A3DD /* PostDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataModel.swift; sourceTree = "<group>"; };
 		777920502824EABC0094A3DD /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		777920522824F6CF0094A3DD /* ProfileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataModel.swift; sourceTree = "<group>"; };
+		777920562824F7E20094A3DD /* HomeStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				7779201E2822EE760094A3DD /* HomePostTableViewCell.swift */,
+				777920562824F7E20094A3DD /* HomeStoryTableViewCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */,
 				7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */,
 				773136F12811A5F500E69459 /* BaseViewController.swift in Sources */,
+				777920572824F7E20094A3DD /* HomeStoryTableViewCell.swift in Sources */,
 				773136E42811287200E69459 /* SearchViewController.swift in Sources */,
 				777920512824EABD0094A3DD /* ProfileCollectionViewCell.swift in Sources */,
 				773136E82811288C00E69459 /* ShopViewController.swift in Sources */,

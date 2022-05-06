@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
     }
     
     private let postTableView = UITableView().then {
+        $0.backgroundColor = .white
         $0.separatorColor = .clear
     }
 
@@ -95,9 +96,9 @@ extension HomeViewController {
 extension HomeViewController {
     private func registerCell() {
         postTableView.register(HomePostTableViewCell.self, forCellReuseIdentifier: HomePostTableViewCell.className)
+        postTableView.register(HomeStoryTableViewCell.self, forCellReuseIdentifier: HomeStoryTableViewCell.className)
     }
     
-    /// TableView setting 함수
     private func setUpTableView() {
         postTableView.delegate = self
         postTableView.dataSource = self
@@ -106,21 +107,46 @@ extension HomeViewController {
 
 // MARK: - UITableViewDelegate
 extension HomeViewController: UITableViewDelegate {
+    
+    /// section 2개로 나눔
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        if indexPath.section == 0 {
+            return 84.adjustedH
+        } else if indexPath.section == 1 {
+            return UITableView.automaticDimension
+        } else {
+            return 0
+        }
     }
 }
 
 // MARK: - UITableViewDataSource
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return PostDataModel.dummyData.count
+        if section == 0 {
+            return 1
+        } else if section == 1 {
+            return PostDataModel.dummyData.count
+        } else {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: HomePostTableViewCell.className, for: indexPath) as? HomePostTableViewCell else { return UITableViewCell() }
+        guard let postTableViewCell = tableView.dequeueReusableCell(withIdentifier: HomePostTableViewCell.className) as? HomePostTableViewCell,
+              let storyTableViewCell = tableView.dequeueReusableCell(withIdentifier: HomeStoryTableViewCell.className) as? HomeStoryTableViewCell else { return UITableViewCell() }
         
-        cell.setData(model: PostDataModel.dummyData[indexPath.row])
-        return cell
+        if indexPath.section == 0 {
+            return storyTableViewCell
+        } else if indexPath.section == 1 {
+            postTableViewCell.setData(model: PostDataModel.dummyData[indexPath.row])
+            return postTableViewCell
+        } else {
+            return UITableViewCell()
+        }
     }
 }
