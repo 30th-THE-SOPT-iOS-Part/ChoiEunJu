@@ -36,6 +36,7 @@
 		7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */; };
 		7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */; };
 		7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA2328009F40006F6EF3 /* UITextField+.swift */; };
+		7779204E282448BF0094A3DD /* PostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779204D282448BF0094A3DD /* PostDataModel.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeUserNameViewController.swift; sourceTree = "<group>"; };
 		7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePasswordViewController.swift; sourceTree = "<group>"; };
 		7756FA2328009F40006F6EF3 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		7779204D282448BF0094A3DD /* PostDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 			children = (
 				773136EF2811A5D300E69459 /* Class */,
 				77D9ECF228013AC4000EA76A /* Struct */,
+				7779204C282448370094A3DD /* Model */,
 				772F677528106B220099A8C0 /* UIComponent */,
 				7756F9FB27FF1EE1006F6EF3 /* Extension */,
 				772F676A281067B00099A8C0 /* Font */,
@@ -278,6 +281,14 @@
 				7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		7779204C282448370094A3DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7779204D282448BF0094A3DD /* PostDataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		77D9ECF228013AC4000EA76A /* Struct */ = {
@@ -417,6 +428,7 @@
 				7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */,
 				773136EE281189D900E69459 /* InstagramTabBarController.swift in Sources */,
 				7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */,
+				7779204E282448BF0094A3DD /* PostDataModel.swift in Sources */,
 				7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */,
 				7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */,
 				773136F12811A5F500E69459 /* BaseViewController.swift in Sources */,
