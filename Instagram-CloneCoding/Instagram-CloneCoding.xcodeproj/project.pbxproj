@@ -36,6 +36,7 @@
 		7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */; };
 		7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */; };
 		7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA2328009F40006F6EF3 /* UITextField+.swift */; };
+		7779201F2822EE760094A3DD /* HomePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779201E2822EE760094A3DD /* HomePostTableViewCell.swift */; };
 		7779204E282448BF0094A3DD /* PostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779204D282448BF0094A3DD /* PostDataModel.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeUserNameViewController.swift; sourceTree = "<group>"; };
 		7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePasswordViewController.swift; sourceTree = "<group>"; };
 		7756FA2328009F40006F6EF3 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		7779201E2822EE760094A3DD /* HomePostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostTableViewCell.swift; sourceTree = "<group>"; };
 		7779204D282448BF0094A3DD /* PostDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 		773136DF2811282500E69459 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7779201C2822EE280094A3DD /* Cell */,
 				773136E02811282F00E69459 /* Controller */,
 			);
 			path = Home;
@@ -281,6 +284,22 @@
 				7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		7779201C2822EE280094A3DD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7779201D2822EE2F0094A3DD /* TableViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7779201D2822EE2F0094A3DD /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7779201E2822EE760094A3DD /* HomePostTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 		7779204C282448370094A3DD /* Model */ = {
@@ -449,6 +468,7 @@
 				773136E62811288200E69459 /* VideoViewController.swift in Sources */,
 				772F677A28106E9D0099A8C0 /* InstagramTextField.swift in Sources */,
 				773136EA2811289B00E69459 /* MypageViewController.swift in Sources */,
+				7779201F2822EE760094A3DD /* HomePostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
