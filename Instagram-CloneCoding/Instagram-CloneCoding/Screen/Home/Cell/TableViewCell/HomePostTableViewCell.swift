@@ -149,7 +149,7 @@ extension HomePostTableViewCell {
         userNameLabel.text = model.userName
         mainImgView.image = model.makePostImg()
         likeCountLabel.text = model.makelikeData()
-        contentLabel.text = model.userName + " " + model.content
+        contentLabel.text = model.userName + "  " + model.content
         commentLabel.text = model.makeCommentData()
         
         let attr = NSMutableAttributedString(string: contentLabel.text!)
