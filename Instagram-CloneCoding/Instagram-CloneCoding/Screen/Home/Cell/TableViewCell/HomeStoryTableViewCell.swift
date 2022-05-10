@@ -73,10 +73,8 @@ extension HomeStoryTableViewCell {
 // MARK: - UICollectionViewDelegateFlowLayout
 extension HomeStoryTableViewCell: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = UIScreen.main.bounds.width
-        
-        let cellWidth = width * (58/375)
-        let cellHeight = cellWidth * (72/58)
+        let cellWidth = 58.adjusted
+        let cellHeight = 72.adjustedH
         
         return CGSize(width: cellWidth, height: cellHeight)
     }
