@@ -36,6 +36,11 @@
 		7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */; };
 		7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */; };
 		7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7756FA2328009F40006F6EF3 /* UITextField+.swift */; };
+		7779201F2822EE760094A3DD /* HomePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779201E2822EE760094A3DD /* HomePostTableViewCell.swift */; };
+		7779204E282448BF0094A3DD /* PostDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7779204D282448BF0094A3DD /* PostDataModel.swift */; };
+		777920512824EABD0094A3DD /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777920502824EABC0094A3DD /* ProfileCollectionViewCell.swift */; };
+		777920532824F6CF0094A3DD /* ProfileDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777920522824F6CF0094A3DD /* ProfileDataModel.swift */; };
+		777920572824F7E20094A3DD /* HomeStoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777920562824F7E20094A3DD /* HomeStoryTableViewCell.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +79,11 @@
 		7756FA1828001D5F006F6EF3 /* MakeUserNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeUserNameViewController.swift; sourceTree = "<group>"; };
 		7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakePasswordViewController.swift; sourceTree = "<group>"; };
 		7756FA2328009F40006F6EF3 /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
+		7779201E2822EE760094A3DD /* HomePostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostTableViewCell.swift; sourceTree = "<group>"; };
+		7779204D282448BF0094A3DD /* PostDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDataModel.swift; sourceTree = "<group>"; };
+		777920502824EABC0094A3DD /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		777920522824F6CF0094A3DD /* ProfileDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDataModel.swift; sourceTree = "<group>"; };
+		777920562824F7E20094A3DD /* HomeStoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,22 +134,19 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
-		773136DF2811282500E69459 /* Main */ = {
+		773136DF2811282500E69459 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7779201C2822EE280094A3DD /* Cell */,
 				773136E02811282F00E69459 /* Controller */,
 			);
-			path = Main;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		773136E02811282F00E69459 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				773136E12811286200E69459 /* HomeViewController.swift */,
-				773136E32811287200E69459 /* SearchViewController.swift */,
-				773136E52811288100E69459 /* VideoViewController.swift */,
-				773136E72811288C00E69459 /* ShopViewController.swift */,
-				773136E92811289B00E69459 /* MypageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,9 +218,13 @@
 			isa = PBXGroup;
 			children = (
 				773136EB281189A700E69459 /* TabBar */,
-				773136DF2811282500E69459 /* Main */,
-				7756F9F827FEE6BD006F6EF3 /* SignIn */,
 				7756FA1228001CD9006F6EF3 /* SignUp */,
+				7756F9F827FEE6BD006F6EF3 /* SignIn */,
+				773136DF2811282500E69459 /* Home */,
+				773136E32811287200E69459 /* SearchViewController.swift */,
+				773136E52811288100E69459 /* VideoViewController.swift */,
+				773136E72811288C00E69459 /* ShopViewController.swift */,
+				773136E92811289B00E69459 /* MypageViewController.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -223,6 +234,7 @@
 			children = (
 				773136EF2811A5D300E69459 /* Class */,
 				77D9ECF228013AC4000EA76A /* Struct */,
+				7779204C282448370094A3DD /* Model */,
 				772F677528106B220099A8C0 /* UIComponent */,
 				7756F9FB27FF1EE1006F6EF3 /* Extension */,
 				772F676A281067B00099A8C0 /* Font */,
@@ -278,6 +290,41 @@
 				7756FA1D280024AB006F6EF3 /* MakePasswordViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		7779201C2822EE280094A3DD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7779204F2824EA9C0094A3DD /* CollectionViewCell */,
+				7779201D2822EE2F0094A3DD /* TableViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7779201D2822EE2F0094A3DD /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7779201E2822EE760094A3DD /* HomePostTableViewCell.swift */,
+				777920562824F7E20094A3DD /* HomeStoryTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		7779204C282448370094A3DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7779204D282448BF0094A3DD /* PostDataModel.swift */,
+				777920522824F6CF0094A3DD /* ProfileDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7779204F2824EA9C0094A3DD /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				777920502824EABC0094A3DD /* ProfileCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
 		77D9ECF228013AC4000EA76A /* Struct */ = {
@@ -414,13 +461,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777920532824F6CF0094A3DD /* ProfileDataModel.swift in Sources */,
 				7756FA1928001D5F006F6EF3 /* MakeUserNameViewController.swift in Sources */,
 				773136EE281189D900E69459 /* InstagramTabBarController.swift in Sources */,
 				7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */,
+				7779204E282448BF0094A3DD /* PostDataModel.swift in Sources */,
 				7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */,
 				7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */,
 				773136F12811A5F500E69459 /* BaseViewController.swift in Sources */,
+				777920572824F7E20094A3DD /* HomeStoryTableViewCell.swift in Sources */,
 				773136E42811287200E69459 /* SearchViewController.swift in Sources */,
+				777920512824EABD0094A3DD /* ProfileCollectionViewCell.swift in Sources */,
 				773136E82811288C00E69459 /* ShopViewController.swift in Sources */,
 				7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */,
 				773136E22811286200E69459 /* HomeViewController.swift in Sources */,
@@ -437,6 +488,7 @@
 				773136E62811288200E69459 /* VideoViewController.swift in Sources */,
 				772F677A28106E9D0099A8C0 /* InstagramTextField.swift in Sources */,
 				773136EA2811289B00E69459 /* MypageViewController.swift in Sources */,
+				7779201F2822EE760094A3DD /* HomePostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
