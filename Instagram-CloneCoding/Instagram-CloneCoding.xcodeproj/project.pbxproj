@@ -197,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				7756F9F727FEE690006F6EF3 /* Global */,
+				77AB9C8A282D73B9002D9438 /* Network */,
 				7756F9F627FEE633006F6EF3 /* Screen */,
 				7756F9F527FEE614006F6EF3 /* Support */,
 			);
@@ -233,7 +234,6 @@
 			isa = PBXGroup;
 			children = (
 				773136EF2811A5D300E69459 /* Class */,
-				77D9ECF228013AC4000EA76A /* Struct */,
 				7779204C282448370094A3DD /* Model */,
 				772F677528106B220099A8C0 /* UIComponent */,
 				7756F9FB27FF1EE1006F6EF3 /* Extension */,
@@ -327,11 +327,11 @@
 			path = CollectionViewCell;
 			sourceTree = "<group>";
 		};
-		77D9ECF228013AC4000EA76A /* Struct */ = {
+		77AB9C8A282D73B9002D9438 /* Network */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Struct;
+			path = Network;
 			sourceTree = "<group>";
 		};
 		7BF9841F0FB66A4699D9F848 /* Pods */ = {
