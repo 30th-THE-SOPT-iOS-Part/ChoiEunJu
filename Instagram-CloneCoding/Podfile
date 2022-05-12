@@ -8,5 +8,6 @@ target 'Instagram-CloneCoding' do
   # Pods for Instagram-CloneCoding
   pod 'SnapKit', '~> 5.0.0'
   pod 'Then'
+  pod 'Alamofire'
 
 end
