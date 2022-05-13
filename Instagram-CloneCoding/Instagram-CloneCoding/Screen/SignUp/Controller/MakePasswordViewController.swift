@@ -114,6 +114,7 @@ extension MakePasswordViewController {
             let nextViewController = ResultViewController()
             
             nextViewController.userName = self.userName
+            nextViewController.password = self.pwTextField.text ?? ""
             nextViewController.modalPresentationStyle = .fullScreen
             self.present(nextViewController, animated: true, completion: nil)
             self.navigationController?.popToRootViewController(animated: true)
