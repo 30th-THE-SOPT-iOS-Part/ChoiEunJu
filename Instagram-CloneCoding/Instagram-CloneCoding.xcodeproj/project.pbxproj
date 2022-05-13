@@ -46,6 +46,9 @@
 		77AB9C92282D793A002D9438 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB9C91282D793A002D9438 /* APIConstants.swift */; };
 		77AB9C94282D79CA002D9438 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB9C93282D79CA002D9438 /* NetworkResult.swift */; };
 		77AB9C97282D7A81002D9438 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB9C96282D7A81002D9438 /* GenericResponse.swift */; };
+		77AB9C9B282D7B00002D9438 /* SignAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB9C9A282D7B00002D9438 /* SignAPI.swift */; };
+		77AB9C9E282D7B66002D9438 /* SignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB9C9D282D7B66002D9438 /* SignService.swift */; };
+		77AB9CA0282E0619002D9438 /* SignInDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB9C9F282E0619002D9438 /* SignInDataModel.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +97,9 @@
 		77AB9C91282D793A002D9438 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		77AB9C93282D79CA002D9438 /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		77AB9C96282D7A81002D9438 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		77AB9C9A282D7B00002D9438 /* SignAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAPI.swift; sourceTree = "<group>"; };
+		77AB9C9D282D7B66002D9438 /* SignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignService.swift; sourceTree = "<group>"; };
+		77AB9C9F282E0619002D9438 /* SignInDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +382,30 @@
 			path = APIModels;
 			sourceTree = "<group>";
 		};
+		77AB9C98282D7A98002D9438 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77AB9C9F282E0619002D9438 /* SignInDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		77AB9C99282D7AE1002D9438 /* APIManagers */ = {
+			isa = PBXGroup;
+			children = (
+				77AB9C9A282D7B00002D9438 /* SignAPI.swift */,
+			);
+			path = APIManagers;
+			sourceTree = "<group>";
+		};
+		77AB9C9C282D7B31002D9438 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				77AB9C9D282D7B66002D9438 /* SignService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		7BF9841F0FB66A4699D9F848 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -510,6 +540,7 @@
 				773136EE281189D900E69459 /* InstagramTabBarController.swift in Sources */,
 				77AB9C8C282D75E3002D9438 /* TargetType.swift in Sources */,
 				7756FA1127FFDDDE006F6EF3 /* UILabel+.swift in Sources */,
+				77AB9C9E282D7B66002D9438 /* SignService.swift in Sources */,
 				7779204E282448BF0094A3DD /* PostDataModel.swift in Sources */,
 				7756FA1E280024AB006F6EF3 /* MakePasswordViewController.swift in Sources */,
 				7756FA2428009F40006F6EF3 /* UITextField+.swift in Sources */,
@@ -520,6 +551,7 @@
 				773136E82811288C00E69459 /* ShopViewController.swift in Sources */,
 				7756FA0327FF2309006F6EF3 /* Adjusted+.swift in Sources */,
 				773136E22811286200E69459 /* HomeViewController.swift in Sources */,
+				77AB9C9B282D7B00002D9438 /* SignAPI.swift in Sources */,
 				7756F9E627FEDCFB006F6EF3 /* SignInViewController.swift in Sources */,
 				7756FA0127FF2294006F6EF3 /* UIButton+.swift in Sources */,
 				77AB9C92282D793A002D9438 /* APIConstants.swift in Sources */,
@@ -532,6 +564,7 @@
 				7756F9E427FEDCFB006F6EF3 /* SceneDelegate.swift in Sources */,
 				7756F9FF27FF1F70006F6EF3 /* UIView+.swift in Sources */,
 				772F6769281064000099A8C0 /* UIColor+.swift in Sources */,
+				77AB9CA0282E0619002D9438 /* SignInDataModel.swift in Sources */,
 				773136E62811288200E69459 /* VideoViewController.swift in Sources */,
 				772F677A28106E9D0099A8C0 /* InstagramTextField.swift in Sources */,
 				773136EA2811289B00E69459 /* MypageViewController.swift in Sources */,
