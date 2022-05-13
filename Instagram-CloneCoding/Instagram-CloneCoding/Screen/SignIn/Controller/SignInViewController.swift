@@ -156,11 +156,7 @@ extension SignInViewController {
     /// 로그인 버튼 tap Action 설정 메서드
     private func setUpTapSignInBtn() {
         signInBtn.press {
-            let resultViewController = ResultViewController()
-            
-            resultViewController.userName = self.idTextField.text ?? ""
-            resultViewController.modalPresentationStyle = .fullScreen
-            self.present(resultViewController, animated: true, completion: nil)
+            self.requestSignIn(email: self.idTextField.text ?? "", pw: self.pwTextField.text ?? "")
         }
     }
     
@@ -223,3 +219,24 @@ extension SignInViewController: UITextFieldDelegate {
         clearBtn.isHidden = idTextField.isEmpty ? true : false
     }
 }
+
+// MARK: - Network
+extension SignInViewController {
+    
+    /// 로그인 요청 메서드
+    private func requestSignIn(email: String, pw: String) {
+        SignAPI.shared.requestSignInAPI(email: email, pw: pw) { networkResult in
+            switch networkResult {
+            case .success(let res):
+                if let message = res as? String {
+                    self.makePresentAlert(title: message, nextVC: InstagramTabBarController())
+                }
+            case .requestErr:
+                self.makeAlert(title: "아이디 또는 비밀번호를 확인해주세요.")
+            default:
+                self.makeAlert(title: "네트워크 오류로 인해\n데이터를 불러올 수 없습니다.\n다시 시도해 주세요.")
+            }
+        }
+    }
+}
+
