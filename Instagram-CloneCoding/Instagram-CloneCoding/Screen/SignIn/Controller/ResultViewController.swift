@@ -114,7 +114,8 @@ extension ResultViewController {
             switch networkResult {
             case .success(let res):
                 if let message = res as? String {
-                    self.makePresentAlert(title: message, nextVC: SignInViewController())
+                    let naviViewController = UINavigationController(rootViewController: SignInViewController())
+                    self.makePresentAlert(title: message, nextVC: naviViewController)
                 }
             case .requestErr:
                 self.makeAlert(title: "중복된 계정입니다.")
