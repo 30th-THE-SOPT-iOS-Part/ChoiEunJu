@@ -49,6 +49,7 @@
 		77AB9C9B282D7B00002D9438 /* SignAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB9C9A282D7B00002D9438 /* SignAPI.swift */; };
 		77AB9C9E282D7B66002D9438 /* SignService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB9C9D282D7B66002D9438 /* SignService.swift */; };
 		77AB9CA0282E0619002D9438 /* SignInDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB9C9F282E0619002D9438 /* SignInDataModel.swift */; };
+		77AB9CA2282E23D5002D9438 /* SignUpDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77AB9CA1282E23D5002D9438 /* SignUpDataModel.swift */; };
 		84BB0D9C19C27061E2C803D7 /* Pods_Instagram_CloneCoding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CD9C2BB1D507AC5C7C9EA1 /* Pods_Instagram_CloneCoding.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,7 @@
 		77AB9C9A282D7B00002D9438 /* SignAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignAPI.swift; sourceTree = "<group>"; };
 		77AB9C9D282D7B66002D9438 /* SignService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignService.swift; sourceTree = "<group>"; };
 		77AB9C9F282E0619002D9438 /* SignInDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDataModel.swift; sourceTree = "<group>"; };
+		77AB9CA1282E23D5002D9438 /* SignUpDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +388,7 @@
 			isa = PBXGroup;
 			children = (
 				77AB9C9F282E0619002D9438 /* SignInDataModel.swift */,
+				77AB9CA1282E23D5002D9438 /* SignUpDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				772F677828106B610099A8C0 /* InstagramBtn.swift in Sources */,
 				772F6774281069B40099A8C0 /* UIFont+.swift in Sources */,
 				7756FA0F27FFD5E9006F6EF3 /* ResultViewController.swift in Sources */,
+				77AB9CA2282E23D5002D9438 /* SignUpDataModel.swift in Sources */,
 				7756F9E227FEDCFB006F6EF3 /* AppDelegate.swift in Sources */,
 				77AB9C94282D79CA002D9438 /* NetworkResult.swift in Sources */,
 				7756F9FD27FF1F0B006F6EF3 /* UIViewController+.swift in Sources */,
