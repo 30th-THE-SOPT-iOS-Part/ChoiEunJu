@@ -13,6 +13,7 @@ class ResultViewController: BaseViewController {
 
     // MARK: - Properties
     var userName: String = ""
+    var password: String = ""
     
     private let messageLabel = UILabel().then {
         $0.text = "000님, Instagram에\n오신 것을 환영합니다"
@@ -91,18 +92,36 @@ extension ResultViewController {
         }
     }
     
-    /// 완료하기 로그인하기 버튼 tap Action 설정 메서드
+    /// 완료하기 버튼 tap Action 설정 메서드
     private func setUpTapCompleteBtn() {
         completeBtn.press {
-            let homeViewController = InstagramTabBarController()
-            
-            homeViewController.modalPresentationStyle = .fullScreen
-            self.present(homeViewController, animated: true, completion: nil)
+            self.requestSignUp(email: self.userName, name: self.userName, pw: self.password)
         }
     }
     
     private func setUpMessageLabel() {
         messageLabel.text = "\(userName)님, Instagram에\n오신 것을 환영합니다"
         messageLabel.textAlignment = .center
+    }
+}
+
+// MARK: - Network
+extension ResultViewController {
+    
+    /// 회원가입 요청 메서드
+    private func requestSignUp(email: String, name: String, pw: String) {
+        SignAPI.shared.requestSignUpAPI(email: email, name: name, pw: pw) { networkResult in
+            switch networkResult {
+            case .success(let res):
+                if let message = res as? String {
+                    let naviViewController = UINavigationController(rootViewController: SignInViewController())
+                    self.makePresentAlert(title: message, nextVC: naviViewController)
+                }
+            case .requestErr:
+                self.makeAlert(title: "중복된 계정입니다.")
+            default:
+                self.makeAlert(title: "네트워크 오류로 인해\n데이터를 불러올 수 없습니다.\n다시 시도해 주세요.")
+            }
+        }
     }
 }
